@@ -1,8 +1,8 @@
 /* 
-  * Promise object *
+  Promise
   represents status whether success or failure and results 
   of asynchronous operations.
-  It is used to improve readability for asynchronous operations. 
+  used to improve readability for asynchronous operations. 
 
   1 Structure of promise
   2 Realworld examples
@@ -13,50 +13,49 @@
 /*
   Structure of Promise
 
-  1 Promise instance
-  callback has two parameters - resolve and rejected
+  1 resolve and reject function
 
   1) resolve
-  invoked when success
+  invoked when operation succeed
 
-  2) rejected
-  invoked wheh failure
+  2) reject
+  invoked wheh operation fail
 
 
   2 Promise status
   1) fullfilled
-  success of operations
+  success of operation
   
   2) rejected
-  failure of operations
+  failure of operation
 
   3) pending
-  wait for end of operations
+  wait for end of operation
 
 
   3 Promise method
-  1) Promise.then()
+  1) then
   process data when success
 
-  2) Promise.catch()
+  2) catch
   process error when failed
 
-  3) Promise.finally()
+  3) finally
   process final operations that executed not relavant with success or failure
 */
 
 
 // instance 
-const promise = new Promise((res, rej) => {
-  res({ foo: "bar"}); // success
+const promise = new Promise((resolve, reject) => {
+  resolve({ foo: "bar"}); // success
 }) 
 
 // usage
 promise
-  .then((value) => { // success
+  .then((value) => { // fullfilled
     console.log(value)
   })
-  .catch((error) => { // failed
+  .catch((error) => { // rejected
     console.error(error);
   })
 
@@ -92,7 +91,7 @@ fetchData()
   async / await
 
   Wait for Promise object returning its results.
-  improve readablility of Promise
+  improve readablility of Promise operation
   error handling in try/catch
 */
 
