@@ -1,5 +1,6 @@
 /* 
   Promise
+  
   represents status whether success or failure and results 
   of asynchronous operations.
   used to improve readability for asynchronous operations. 
@@ -13,12 +14,12 @@
 /*
   Structure of Promise
 
-  1 resolve and reject function
+  1 res, rej function
 
-  1) resolve
+  1) res(resolve)
   invoked when operation succeed
 
-  2) reject
+  2) rej(reject)
   invoked wheh operation fail
 
 
@@ -41,13 +42,14 @@
   process error when failed
 
   3) finally
-  process final operations that executed not relavant with success or failure
+  process final operations 
 */
 
 
 // instance 
-const promise = new Promise((resolve, reject) => {
-  resolve({ foo: "bar"}); // success
+const promise = new Promise((res, rej) => {
+  // success
+  res("Meow"); 
 }) 
 
 // usage
@@ -61,22 +63,22 @@ promise
 
 
 /*
-  2 Realworld examples
+  Realworld usage
 
   when fetching data from server
 */ 
 
 
 // request data to server
-function fetchData() {
+function getData() {
   const promise = new Promise((res, rej) => {
-    res("duck"); // success
+    res("Meow"); 
   })
 
   return promise;
 }
 
-fetchData()
+getData()
   .then(data => { 
     console.log("data from server:", data);
   })
@@ -84,21 +86,19 @@ fetchData()
     console.error(error)
   })
 
-// > data from server: duck
-
 
 /*
   async / await
 
   Wait for Promise object returning its results.
-  improve readablility of Promise operation
+  to improve readablility of Promise
   error handling in try/catch
 */
 
 
 function fetchData() {
   const promise = new Promise((res, rej) => {
-    res("duck")
+    res("Meow")
   })
 
   return promise;
@@ -107,7 +107,8 @@ function fetchData() {
 async function f() {
   try {
 
-    const data = await fetchData(); // wait for results
+    // wait for results
+    const data = await fetchData(); 
 
     console.log("data from server:", data);
 
@@ -115,5 +116,3 @@ async function f() {
     console.error(err)
   }
 }
-
-// > data from server: duck

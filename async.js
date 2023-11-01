@@ -20,8 +20,6 @@ function f() {
 
 f();
 console.log("Operation 2");
-// > operations 1
-// > operations 2
 
 
 /*
@@ -30,14 +28,15 @@ console.log("Operation 2");
   Faster operation is executed ahead
 */
 
-// Pretending that it takes 1s to fetch data from server.
-function fetchData(callback) {
+
+// Pretending that it takes 1s to get data from server.
+function getData(callback) {
   setTimeout(() => {
-    callback(null, "duck");
+    callback(null, "Meow");
   }, 1000);
 }
 
-fetchData(function (err, data) {
+getData(function (err, data) {
   if (err) {
     throw err;
   }
@@ -46,8 +45,6 @@ fetchData(function (err, data) {
 });
 
 console.log("Next operations");
-// > next operations
-// > Data from sever: duck
 
 
 

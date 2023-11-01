@@ -1,5 +1,5 @@
 /*
-  Spread Operator  
+  Spread Operator (...)
 
   1 Spread operator in Array
   2 Spread operator in Object
@@ -9,7 +9,7 @@
 /* 
   Spread operator in array
 
-  make items of array to copy easily.
+  make items of array to copy with ease.
   ...Array to copy
 */
 
@@ -22,16 +22,6 @@ var updatedBeers = [...beers, newBeer];
 
 console.log(updatedBeers) 
 // > Guinness, Heineken, Budwiser
-
-
-// concatenate arrays
-var europeanBeers = ['Guinness', 'Heineken'];
-var asianBeers = ['Asahi', 'Kloud']
-
-var worldBeers = [...europeanBeers, ...asianBeers];
-
-console.log(worldBeers);
-// > Guinness, Heineken, Asahi, Kloud
 
 
 /* 
@@ -47,7 +37,7 @@ var irishBeer = {
   available: false 
 };
 
-// add or update 
+// update 
 var updatedIrishBeer = { ...irishBeer, available: true };
 
 console.log(updatedIrishBeer);

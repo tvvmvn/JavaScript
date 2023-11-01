@@ -9,10 +9,14 @@
 
 /* 
   1 let 
+  reserved words for variable declation
+  almost same as var
 */
 
 
+// redeclation not allowed
 let foo = "bar";
+let foo = "baz"
 
 
 /* 
@@ -29,7 +33,7 @@ const foo = "bar";
   let and const has block scope.
 */
 
-{
+{ // block
   var varInBlock = true;
   let letInBlock = true;
   const constInBlock = true;

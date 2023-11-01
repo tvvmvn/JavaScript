@@ -9,7 +9,7 @@
  
 /* 
   Array Destructing 
-  assign item of array to variables with simpler syntax
+  assign item of array to variables with ease
 */
 
 var beers = ['Guinness', 'Heineken', 'Budwiser'];
@@ -25,7 +25,7 @@ var [ irishBeer, dutchBeer, americanBeer ] = beers;
 
 /* 
   Object Destructing 
-  access properties with simpler syntax
+  access properties with ease
 */
 
 var irishBeer = { name: 'Guinness', origin: 'Ireland', available: false }
@@ -41,7 +41,7 @@ console.log(name, origin, available)
 
 /* 
   Parameter Destructing 
-  access parameter with simpler syntax
+  access parameter with ease
 */
 
 var irishBeer = { name: 'Guinness', origin: 'Ireland', available: false };
@@ -57,6 +57,7 @@ function f({ name, origin, available }) {
 }
 
 f(irishBeer)
+
 
 /*
   Q1. assign each beer to variables with destructing syntax.

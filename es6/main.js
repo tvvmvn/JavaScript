@@ -1,18 +1,14 @@
 /*
   * ES6 (2015) *
-  Major change
-  New Syntax
+  new syntax
 
   1 let, const
-  2 method - Array.map(), Object.keys
-  3 arrow function 
-  4 destructing √
-  5 spread operator √
-  6 promise
-  
-  Symbol
+  2 New methods
+  3 Arrow function 
+  4 Destructing 
+  5 Spread operator 
+  6 Promise
 */
-
 
 
 

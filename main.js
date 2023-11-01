@@ -18,3 +18,8 @@
   12 Asynchronous operation
   13 JSON
 */
+
+
+var promise = new Promise((res, rej) => {});
+
+console.log(promise);

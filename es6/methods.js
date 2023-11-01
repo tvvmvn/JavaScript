@@ -2,7 +2,7 @@
   ES6 Methods
 
   1 Array.map
-  2 Array.filter
+  2 Array.filter (ES 5)
   3 Object.keys
 */
 
@@ -15,8 +15,7 @@
 */
 
 
-// get new array with each item multiplied by 10.
-
+// multiply by 10 to each item
 var arr = [10, 20, 30];
 
 var updatedArr = arr.map(function (item, index, self) {
@@ -31,15 +30,10 @@ console.log(updatedArr);
   Array.filter (ES 5)
 */
 
+
 var ages = [13, 20, 34, 40];
 
-var adults = ages.filter(function (age) {
-  if (age >= 18) {
-    return age;
-  }
-})
-
-var adults = ages.filter(function (age) {
+var adults = ages.filter(function (age, index, self) {
   return age >= 18;
 });
 
@@ -50,7 +44,7 @@ console.log(ages);
 /*
   Object.keys
 
-  return keys as string array of Object
+  return keys of object as string array
 */
 
 var cat = {
@@ -68,7 +62,7 @@ console.log(keys)
 
 
 /*
-  Q. get new array with all items in uppercase
+  Q. get new array with all items in uppercase 
   using beers array.
 */
 
