@@ -1,9 +1,9 @@
 /*
-  *** CONDITION ***
+  Conditional statement
   
-  1 if condition
-  2 switch condition
-  3 ? (ternary) condition
+  1 if statement
+  2 switch statement
+  3 ? (ternary) statement
 */
 
 
@@ -14,6 +14,7 @@
   2 if/else
   3 if/else if/else
 */
+
 
 // if
 var year = 2023
@@ -68,7 +69,7 @@ switch(year) {
     break;
 
   default:
-    console.log('not close year');
+    console.log('Not a close year');
 }
 // > This year
 
@@ -76,11 +77,12 @@ switch(year) {
 /* 
   ? (ternary)
 
-  Condition ? value1 : value2
+  condition ? value1 : value2
   
-  if true, return value 1 
-  if false, return value 2
+  condition is true, return value 1 
+  condition is false, return value 2
 */
+
 
 var year = 2023;
 var r = year === 2023 ? 'This year' : 'Not this year';
@@ -93,17 +95,16 @@ console.log(r);
   Q. Condition
 
   Make conditional statements that prints 
-  he is teenager or not according to age variable
+  he is an adult or not according to age variable
 
-  1 if/else
-
-  2 ternary 
+  1 if/else statements
+  2 ternary statements
 */
-
-var age = 20;
 
 
 // Q1. if/else condition
+var age = 20;
+
 if (age >= 18) {
   console.log("He is an adult.")
 } else {
@@ -113,7 +114,8 @@ if (age >= 18) {
 
 
 // Q2. ternary condition
-var r = age >= 18 ? 'He is an adult' : 'He is not an adult';
+var age = 20;
 
+var r = age >= 18 ? 'He is an adult' : 'He is not an adult';
 console.log(r)
 // > he is an adult

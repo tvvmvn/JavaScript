@@ -1,5 +1,5 @@
 /*
-  *** OPERATOR ***
+  * OPERATOR 
   
   1 Arithmetic operator
   2 Assignment operator
@@ -14,21 +14,26 @@
 
   1 4-Rules
   +, -, *, / 
+
   2 increment operator
   ++ 
+
   3 decrement operator
   -- 
+
   4 exponentiation operator
   ** 
+  
   5 modulus operator
   % 
 */
 
-// Arithmetic operator
-var add = 1 + 1
-var subtract = 2 - 1
-var divide = 1 / 2
-var multiply = 1 * 2
+
+// 4 rules
+var add = 1 + 1;
+var subtract = 2 - 1;
+var divide = 1 / 2;
+var multiply = 1 * 2;
 
 console.log("1 + 1 =", add);
 // > 2
@@ -42,30 +47,30 @@ console.log("1 * 2 =", multiply)
 
 // + with String
 var s = "hello" +  " world";
-
 console.log(s);
+// > hello world
 
-var s = "hello " + 2024
 
+var s = "hello " + 2024;
 console.log(s);
 // > hello 2024
 console.log(typeof s)
 // > string
 
 
-//  Increment and decrement operator
+// increment/decrement operator
 var i = 1;
 
 i++;
 
-console.log(i)
+console.log(i);
 // > 2
 
 
 // Exponentiation operator
-var exp = 2 ** 7
+var exp = 2 ** 7;
 
-console.log(exp)
+console.log(exp);
 // > 128
 
 
@@ -89,13 +94,14 @@ console.log(mod)
   *=
   5 Division assignment operator
   /=
-  6 Wxponentiation assignment operator
+  6 Exponentiation assignment operator
   **=
   7 Moduls assignment operator
   %= 
 */
 
-// Variable assignment operator
+
+// variable assignment operator
 var foo = "bar"
 
 console.log(foo) 
@@ -133,47 +139,52 @@ console.log(n)
   <=
 */
 
+
 // Equal operation
+
 console.log(1 == 2);
 // > false
 console.log("foo" == "bar");
 // > false
-console.log(2023 == "2023" ) 
+console.log(0 == false);
 // > true
-console.log(null == undefined) 
+console.log(2023 == "2023"); 
 // > true
 
 
 // Strict equal operation
+
 console.log(1 === 2); 
 // > false
 console.log("foo" === "bar");
 // > false
-console.log(2023 === "2023"); 
+console.log(0 === false); 
 // > false
-console.log(null === undefined); 
+console.log(2023 === "2023"); 
 // > false
 
 
 // Not equal operation
+
 console.log(1 != 2) 
 // > true
 console.log("foo" != "bar");
 // > true
-console.log(2023 != "2023") 
+console.log(0 != false);
 // > false
-console.log(null != undefined) 
+console.log(2023 != "2023");
 // > false
 
 
 // Strict not equal operation
+
 console.log(1 !== 2) 
 // > true
 console.log("foo" !== "bar");
 // > true
-console.log(2023 !== "2023") 
+console.log(0 !== false); 
 // > true
-console.log(null !== undefined) 
+console.log(2023 !== "2023") 
 // > true
 
 
@@ -216,25 +227,24 @@ console.log(1 > 0 || 1 > 2)
 */
 
 
-console.log(!(1 > 0)) 
+console.log(!true); 
 // > false
 
 
 // NOT with not boolean type
-console.log("not null:", !null)
-// > true
-console.log("not undefined:", !undefined)
-// > true
+
 console.log("not 0:", !0);
 // > true
 console.log("not number:", !2);
-// > false
-console.log("not negative number:", !-2);
 // > false
 console.log("not emptry string:", !"");
 // > true
 console.log("not string:", !"foo");
 // > false
+console.log("not null:", !null)
+// > true
+console.log("not undefined:", !undefined)
+// > true
 
 
 /*
@@ -242,6 +252,7 @@ console.log("not string:", !"foo");
   
   return type of variables
 */
+
 
 var foo = "bar";
 

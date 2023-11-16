@@ -4,24 +4,26 @@
   1 String
   2 Number
   3 Boolean
-  4 Null
-  5 Undefined
+  4 null
+  5 undefined
 */
 
 
 /* 
   String (문자열)
-
+  
   1 value
   a sequence of characters. 
+
+  2 access each character
+
+  3 get the number of characters
 */
 
 
-// value inside ''(single quotes) or  ""(dobule quotes)
+// value inside '' or ""
 var foo = "bar";
 
-
-// value and type
 console.log(foo); 
 // > foo
 console.log(typeof foo);
@@ -36,7 +38,8 @@ console.log(foo[1]);
 console.log(foo[2]); 
 // > r
 
-// the number of character
+
+// get the number of characters
 console.log(foo.length);
 // > 3
 
@@ -44,7 +47,7 @@ console.log(foo.length);
 /*
   Number
   
-  1 Types of values
+  1 value
   1) integer
   2) fraction number (분수)
   3) NaN(Not a number)
@@ -100,9 +103,10 @@ console.log(negative_infinity)
 /*
   Boolean
 
-  1 types of value
+  1 value
   true or false
 */
+
 
 var bool = true;
 
@@ -118,7 +122,7 @@ console.log(1 > 0);
 
 
 /*
-  Null
+  null
   it means "empty"
 
   1 value
@@ -135,18 +139,19 @@ console.log(typeof foo);
 
 
 /*
-  Undefined
+  undefined
   data type that not defined variable has
 
   1 value
   undefined
 */ 
 
-var x;
 
-console.log(x); 
+var foo;
+
+console.log(foo); 
 // > undefined
-console.log(typeof x); 
+console.log(typeof foo); 
 // > undefined
 
 

@@ -1,5 +1,5 @@
 /*
-  * JavaScript Tutorials *
+  * JavaScript Tutorials 
 
   1 Data type 
   2 Basic method
@@ -18,8 +18,3 @@
   12 Asynchronous operation
   13 JSON
 */
-
-
-var promise = new Promise((res, rej) => {});
-
-console.log(promise);

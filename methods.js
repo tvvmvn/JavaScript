@@ -14,39 +14,62 @@
   2 indexOf
   3 trim
   4 substring
-
-  references
 */
 
 
-// toUpperCase
+/*
+  toUpperCase
+
+  tranform all characters to upper case letter
+*/
+
+
 var foo = "bar";
 
 console.log(foo.toUpperCase());
 // > BAR
 
 
-// indexOf(string to search)
+/*
+  indexOf(string to search)
+
+  returns index of argument
+*/
+
+
 var foo = "bar"
 
-console.log(foo.indexOf("r"))
-// > 2
-console.log(foo.indexOf("k"))
+console.log(foo.indexOf("b"))
+// > 0
+console.log(foo.indexOf("z"))
 // > -1
 
 
-// trim
+/*
+  trim
+
+  remove spaces in front and rear of string
+  for example, data sanitization (정제)
+*/
+
+
 var foo = "  bar  ";
 
-console.log(foo.trim())
+console.log(foo.trim());
 // > bar
 
 
-// substring(startIndex, endIndex)
-var foo = "abcde"
+/*
+  substring(startIndex, endIndex)
 
-console.log(foo.substring(2, 4))
-// > cd
+  extract some characters from string
+*/
+
+
+var foo = "hello world"
+
+console.log(foo.substring(0, 4))
+// > hell
 
 
 /*
@@ -57,20 +80,36 @@ console.log(foo.substring(2, 4))
 */
 
 
-// toPrecision()
+/*
+  toPrecision
+
+  set precision of Number value
+*/
+
+
 var pi = Math.PI;
 
 console.log(pi)
-// > 3.141592653589793
+// > 3.141592653589793 (16 digits)
 
-var precisePi = pi.toPrecision(50);
 
+var precisePi = pi.toPrecision(100);
 console.log(precisePi)
-// > 3.1415926535897931159979634685441851615905761718750
+// > 3.14...
+
+
+/*
+  toString
+
+  transform Number value to String value
+*/
 
 
 // toString
-var year = 2023
+var year = 2023;
+var yearInString = year.toString();
 
-console.log(year.toString());
+console.log(yearInString.toString());
 // > "2023"
+console.log(typeof yearInString.toString());
+// > string
