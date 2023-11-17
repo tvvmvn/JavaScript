@@ -1,8 +1,8 @@
 /*
   * Function
-  codes excuted when invoked.
+  a block of codes excuted when invoked.
 
-  1 Function eclaration
+  1 Function declaration and invoke
   2 Hoisting
   3 Parameter and argument
   4 return 
@@ -11,8 +11,9 @@
 
 
 /*
-  Functino declaration 
+  Function declaration and invoke
 */
+
 
 // declaration
 function f() {
@@ -23,17 +24,22 @@ function f() {
 f() 
 // > foo
 
+// or 
+var f = function () {
+  console.log("foo");
+}
+
 
 /* 
   Hoisting (게양)
 
-  function declaration is hoisted higher than invoke
+  you can write function declaration below invoke.
+  a sort of readability option
 */
 
-// invoke
-f()
 
-// declaration
+f();
+
 function f() {
   console.log("foo");
 }
@@ -42,6 +48,7 @@ function f() {
 /*
 parameter and argument 
 */
+
 
 function add(x, y) { // parameters: x, y
   console.log("result:", x + y);
@@ -56,6 +63,7 @@ add(1, 2); // arguments: 1, 2
 
   function can return operation result.
 */
+
 
 function add(x, y) {
   return x + y;
@@ -73,6 +81,7 @@ console.log("result:", r);
   function arguments
 */
 
+
 function f(callback) {
   var foo = "bar";
 
@@ -84,7 +93,7 @@ function cb(data) {
 } 
 
 f(cb);
-// > foo
+// > bar
 
 
 // Realworld example of callback
@@ -99,8 +108,9 @@ setInterval(getTime, 1000);
 
 /*
   Q. declare function that prints whether he/she is an adult or not
-  according to age argument.
+  according to age input.
 */
+
 
 function isAdult(age) {
   // additional

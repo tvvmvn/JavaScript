@@ -141,3 +141,53 @@
 //     break;
 // }
 
+
+// switch (2023) {
+//   case 2022:
+//     console.log("last year");
+//   case 2023:
+//     console.log("this year");
+//   case 2024:
+//     console.log("next year");
+// }
+
+
+// switch (2023) {
+//   case 2022:
+//     console.log("last year");
+//     break;
+//   case 2023:
+//     console.log("this year");
+//     break;
+//   case 2024:
+//     console.log("next year");
+//     break;
+// }
+
+
+// switch (2030) {
+//   case 2022:
+//     console.log("last year");
+//     break;
+//   case 2023:
+//     console.log("this year");
+//     break;
+//   case 2024:
+//     console.log("next year");
+//     break;
+//   default:
+//     console.log("Not a close year");
+// }
+
+
+
+// Speed limit
+// for (var i=0; i<100; i++) {
+  
+//   if (i > 60) {
+//     console.log("Slow down")
+//     break;
+//   }
+
+//   console.log(i);
+// }

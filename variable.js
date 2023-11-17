@@ -3,7 +3,7 @@
   container that store value
   
   1 Basic usage
-  2 global and local variable
+  2 Global & local variable
 */
 
 
@@ -11,20 +11,12 @@
 Basic usage
 */
 
+
 // declare and define
 var foo = "bar";
 
 console.log(foo);
 // > bar
-
-
-// declare and redefine
-var foo = 'bar'
-// redefine
-foo = "baz"; 
-
-console.log(foo) 
-// > baz
 
 
 // declare 
@@ -36,15 +28,25 @@ console.log(foo)
 // > bar
 
 
+// define
+var foo = 'bar'
+// redefine
+foo = "baz"; 
+
+console.log(foo) 
+// > baz
+
+
+
 /*
-  Global and local variable
+  Global & local variable
 */
 
 
 /*
   Global variable
   
-  Declared outside function. 
+  Declared outside function 
   Accessible from anywhere in source code
 */
 
@@ -56,7 +58,7 @@ console.log(varInGlobal);
 
 
 /*
-  Local variable
+  Local variable (function scope)
   
   Declared inside function. 
   Only accessible in function that a variable is declared
@@ -72,5 +74,6 @@ function f() {
 
 console.log(varInFunction)
 // > reference error
+
 
 f();

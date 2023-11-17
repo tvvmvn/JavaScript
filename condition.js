@@ -2,21 +2,22 @@
   Conditional statement
   
   1 if statement
+  2 if else statement
+  3 else if statement
   2 switch statement
   3 ? (ternary) statement
 */
 
 
 /*
-  if condition
+  if statement 
 
-  1 if
-  2 if/else
-  3 if/else if/else
+  if (condition) {
+    codes when condition is true
+  }
 */
 
 
-// if
 var year = 2023
 
 if (year === 2023) {
@@ -25,7 +26,17 @@ if (year === 2023) {
 // > This year
 
 
-// if / else
+/*
+  if-else statement
+
+  if (condition) {
+    codes when condition is true
+  } else {
+    codes when condition is false
+  }
+*/
+
+
 if (year === 2023) {
   console.log('This year')
 } else {
@@ -34,7 +45,19 @@ if (year === 2023) {
 // > This year
 
 
-// if / else if / else
+/*
+  else if statement
+
+  if (condition1) {
+    codes when condition1 is true
+  } else if (condition2) {
+    codes when condition2 is true
+  } else {
+    codes when all conditions is false
+  }
+*/
+
+
 if (year === 2022) {
   console.log('Last year')
 } else if (year === 2023) {
@@ -50,6 +73,14 @@ if (year === 2022) {
 /*
   2 Switch
   perform strict equal comparison operation.
+
+  1 Basic usage
+  2 default block
+*/
+
+
+/* 
+Basic usage
 */
 
 
@@ -67,15 +98,40 @@ switch(year) {
   case 2024:
     console.log('Next year');
     break;
-
-  default:
-    console.log('Not a close year');
 }
 // > This year
 
 
+/*
+  default block
+
+  excuted when every case is false
+*/
+
+
+var year = 2030;
+
+switch(year) {
+  case 2022:
+    console.log('Last year');
+    break;
+
+  case 2023:
+    console.log('This year');
+    break;
+
+  case 2024:
+    console.log('Next year');
+    break;
+  
+  default:
+    console.log("Not a close year");
+}
+
+
+
 /* 
-  ? (ternary)
+  ? (ternary) statement
 
   condition ? value1 : value2
   
@@ -92,17 +148,15 @@ console.log(r);
 
 
 /*
-  Q. Condition
-
-  Make conditional statements that prints 
+  Q. Make conditional statements that prints 
   he is an adult or not according to age variable
 
-  1 if/else statements
-  2 ternary statements
+  1 if else statement
+  2 ternary statement
 */
 
 
-// Q1. if/else condition
+// if else statement
 var age = 20;
 
 if (age >= 18) {
@@ -113,7 +167,7 @@ if (age >= 18) {
 // > he is an adult
 
 
-// Q2. ternary condition
+// ternary statement
 var age = 20;
 
 var r = age >= 18 ? 'He is an adult' : 'He is not an adult';

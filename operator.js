@@ -29,7 +29,11 @@
 */
 
 
-// 4 rules
+/*
+  The 4 rules
+*/
+
+
 var add = 1 + 1;
 var subtract = 2 - 1;
 var divide = 1 / 2;
@@ -58,7 +62,13 @@ console.log(typeof s)
 // > string
 
 
-// increment/decrement operator
+/*
+  increment & decrement operator
+  
+  increase or decrease variable by 1
+*/
+
+
 var i = 1;
 
 i++;
@@ -67,14 +77,23 @@ console.log(i);
 // > 2
 
 
-// Exponentiation operator
+/*
+  Exponentiation operator  
+*/
+ 
+ 
+// base ** exponent
 var exp = 2 ** 7;
-
 console.log(exp);
 // > 128
 
 
-// Modulus (Devision remainder) operator
+/*
+  Modulus (Devision remainder) operator
+*/
+ 
+ 
+// dividend % divisor
 var mod = 5 % 2;
 
 console.log(mod)
@@ -101,18 +120,25 @@ console.log(mod)
 */
 
 
-// variable assignment operator
+/*
+variable assignment operator
+*/
+
+
 var foo = "bar"
 
 console.log(foo) 
 // > bar
 
 
-// Addition assignment operator
+/*
+Addition assignment operator
+*/ 
+
+
 var n = 1;
 
-// n = n + 1
-n += 1; 
+n += 1; // n = n + 1
 
 console.log(n) 
 // > 2
@@ -123,10 +149,10 @@ console.log(n)
 
   1 Equal operator
   == 
-  2 Not equal operator
-  != 
-  3 Strict equal operator
+  2 Strict equal operator
   ===
+  3 Not equal operator
+  != 
   4 Strict not equal operator
   !==
   5 gt operator
@@ -140,7 +166,15 @@ console.log(n)
 */
 
 
-// Equal operation
+/*
+  Equal operation
+
+  expr1 == expr2
+
+  return true if exprs are equal
+  return false if exprs are not equal
+*/
+
 
 console.log(1 == 2);
 // > false
@@ -152,7 +186,15 @@ console.log(2023 == "2023");
 // > true
 
 
-// Strict equal operation
+/*
+  Strict equal operation
+
+  expr1 === expr2
+
+  return true if exprs are equal
+  return false if exprs are not equal
+*/
+
 
 console.log(1 === 2); 
 // > false
@@ -164,7 +206,15 @@ console.log(2023 === "2023");
 // > false
 
 
-// Not equal operation
+/*
+  Not equal operation
+
+  expr1 != expr2
+
+  return true if exprs are not equal
+  return false if exprs are equal
+*/
+
 
 console.log(1 != 2) 
 // > true
@@ -176,7 +226,15 @@ console.log(2023 != "2023");
 // > false
 
 
-// Strict not equal operation
+/*
+  Strict not equal operation
+
+  expr1 !== expr2
+
+  return true if exprs are not equal
+  return false if exprs are equal
+*/
+
 
 console.log(1 !== 2) 
 // > true
@@ -235,7 +293,7 @@ console.log(!true);
 
 console.log("not 0:", !0);
 // > true
-console.log("not number:", !2);
+console.log("not number:", !2023);
 // > false
 console.log("not emptry string:", !"");
 // > true
