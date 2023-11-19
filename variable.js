@@ -58,7 +58,7 @@ console.log(varInGlobal);
 
 
 /*
-  Local variable (function scope)
+  Local variable 
   
   Declared inside function. 
   Only accessible in function that a variable is declared
@@ -67,13 +67,7 @@ console.log(varInGlobal);
 
 function f() {
   var varInFunction = true;
-  
-  console.log(varInFunction)
-  // > true  
 }
 
 console.log(varInFunction)
 // > reference error
-
-
-f();

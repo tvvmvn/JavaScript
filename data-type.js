@@ -79,13 +79,13 @@ console.log(nan);
 // Max value of Number
 var max_value = Number.MAX_VALUE;
 console.log(max_value);
-// > 1.7976931348623157e+308
+// > 1.7e+308
 
 
 // Negative max value of Number 
 var negative_max_value = -Number.MAX_VALUE;
 console.log(negative_max_value); 
-// > -1.7976931348623157e+308
+// > -1.7e+308
 
 
 // Positive Infinity
