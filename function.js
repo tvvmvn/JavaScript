@@ -20,20 +20,19 @@ function f() {
   console.log("foo")
 }
 
-// invoke
-f() 
-// > foo
-
 // or 
 var f = function () {
   console.log("foo");
 }
 
+// invoke
+f() 
+
 
 /* 
   Hoisting (게양)
 
-  you can write function declaration below invoke.
+  you can declare function below invoke.
   a sort of readability option
 */
 
@@ -47,14 +46,17 @@ function f() {
 
 /*
 parameter and argument 
+
+1 parameter - variable that represent arguments
+2 argument - input (value) on function
 */
 
 
-function add(x, y) { // parameters: x, y
+function add(x, y) { // x, y is parameters
   console.log("result:", x + y);
 }
 
-add(1, 2); // arguments: 1, 2
+add(1, 2); // 1, 2 is arguments
 // > result: 3
 
 
@@ -78,7 +80,7 @@ console.log("result:", r);
 /*
   Callback
 
-  function arguments
+  function argument
 */
 
 
@@ -98,7 +100,7 @@ f(cb);
 
 // Realworld example of callback
 function getTime() {
-  let time = new Date().toLocaleTimeString();
+  var time = new Date().toLocaleTimeString();
   console.log(time)
 }
 
@@ -107,7 +109,7 @@ setInterval(getTime, 1000);
 
 
 /*
-  Q. declare function that prints whether he/she is an adult or not
+  Q. declare and invoke function that prints whether he/she is an adult or not
   according to age input.
 */
 
@@ -115,10 +117,11 @@ setInterval(getTime, 1000);
 function isAdult(age) {
   // additional
   if (typeof age !== "number") {
-    console.log("argument type must be a number");
-    return; // stop execution
+    console.log("input must be a number");
+    return; 
   }
 
+  // codes are not executed after return.
   if (age >= 18) {
     console.log("He/she is an adult");
   } else {

@@ -2,18 +2,18 @@
   * Array
   data type which can hold more than one value
 
-  1 basic usage
+  1 Basic usage
   2 Array method
   3 Loop array
 */
 
 
 /* 
-  1 basic usage
+  Basic usage
 
-  1) access item
-  2) update item
-  3) get the number of item
+  1 access item
+  2 update item
+  3 get the number of item
 */
 
 
@@ -48,7 +48,7 @@ console.log(arr.length);
 
 /* 
   Array methods 
-  perform specific operations to Array.
+  perform some operations to Array.
 
   1 push
   2 pop
@@ -57,18 +57,28 @@ console.log(arr.length);
 */
 
 
-// push(newItem1, newItem2, ...)
+/*
+  push(newItem1, newItem2, ...)
+
+  add new item at the end of an array
+*/
+
+
 var arr = [10, 20];
 
-var newItem = 30;
-
-arr.push(newItem);
+arr.push(30);
 
 console.log(arr);
 // > 10, 20, 30
 
 
-// pop()
+/* 
+  pop()
+
+  remove last item of an array
+*/
+
+
 var arr = [10, 20, 30];
 
 arr.pop();
@@ -77,7 +87,14 @@ console.log(arr);
 // > 10, 20
 
 
-// array1.concat(array1, array2, ...) 
+/*
+  array1.concat(array2, array3, ...) 
+
+  concatenate another arrays after an array1
+  return an new array
+*/
+
+
 var arr1 = [10, 20];
 var arr2 = [30, 40] 
 
@@ -87,7 +104,15 @@ console.log(r);
 // > 10, 20, 30, 40
 
 
-// Array.sort();
+/*
+  sort
+
+  sort an array
+  ascending in Number array
+  alphabetical order in String array
+*/
+
+
 var arr = [10, 30, 20];
 
 arr.sort();
@@ -99,11 +124,14 @@ console.log(arr);
 /*
   Loop array
 
-  to perform operation to array.
+  perform some operations to array.
+
+  1 update each item in array
+  2 filtering array
 */
 
 
-// change each item
+// update each item - multiply each item by 10.
 var arr = [10, 20, 30];
 
 for (var i=0; i<arr.length; i++) {
@@ -114,7 +142,7 @@ for (var i=0; i<arr.length; i++) {
 // > 300
 
 
-// filtering an array
+// filtering an array - print only adults
 var ages = [12, 19, 23, 30];
 
 for (var i=0; i<arr.length; i++) {
@@ -125,17 +153,17 @@ for (var i=0; i<arr.length; i++) {
 
 
 /* 
-Q1. Add new beer to list and print them.
+Q1. Add new car to car list
 */
  
 
-var beers = ["Guinness", "Heineken"];
-var americanBeer = "Budwiser";
+var cars = ["Staria", "Avante Hybrid", "IONIQ5"];
+var newCar = "Casper";
 
-beers.push(americanBeer);
+cars.push(newCar);
 
-console.log(beers)
-// > Guinness, Heineken, Budwiser
+console.log(cars)
+// > Staria, Avante Hybrid, IONIQ5, Casper
 
 
 /* 

@@ -1,21 +1,45 @@
 /* 
   * Object
   composition for data and function
-
-  1 Access property
-  2 change object
+  
+  1 structure of Object
+  1 Access properties
+  2 update object
 */
+
+
+/* 
+  Structrue of Object
+
+  1 property
+  data that object has.
+  it is composed of key and value
+  key is used to find a value
+
+  2 method
+  property that value is function
+*/
+
+
+var cat = { 
+  // properties (key: value)
+  name: "Kitty", 
+  home: null,
+  sound: function () { // method
+    return "meow";
+  }
+}
 
 
 /* 
 Access properties
 */
 
+
 var cat = { 
-  // properties 
   name: "Kitty",
   home: null,
-  sound: function () { // method
+  sound: function () { 
     return "meow";
   }
 }
@@ -33,14 +57,14 @@ console.log(cat.sound());
 
 
 /* 
-change object
+update object
 */
 
+
 var cat = { 
-  // properties 
   name: "Kitty",
   home: null,
-  sound: function () { // method
+  sound: function () { 
     return "meow";
   }
 }
@@ -60,9 +84,11 @@ delete cat.home;
 console.log(cat)
 // no home 
 
+
 /*
-  Q1. Irish beer is restocked
+  Q1. Irish beer is restocked. update irishBeer object
 */
+
 
 var irishBeer = { 
   name: "Guinness", 
@@ -77,8 +103,9 @@ console.log(irishBeer)
 
 
 /*
-  Q2. print each beer name with uppercase using array loop.
+  Q2. print each beer name with uppercase using Array loop.
 */
+
 
 var beers = [
   { name: "Guinness", origin: "Ireland" },
@@ -89,6 +116,7 @@ var beers = [
 for (let i=0; i<beers.length; i++) {
   console.log(beers[i].name.toUpperCase());
 }
-// > GUINNESS
-// > HEINEKEN
-// > BUDWISER
+
+// GUINNESS
+// HEINEKEN
+// BUDWISER
