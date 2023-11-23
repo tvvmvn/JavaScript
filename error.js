@@ -16,6 +16,7 @@
   Error must be handled
 */
 
+
 console.log(foo) 
 // > app crashed
 

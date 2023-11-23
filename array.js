@@ -2,6 +2,7 @@
   * Array
   data type which can hold more than one value
 
+  1 Structure
   1 Basic usage
   2 Array method
   3 Loop array
@@ -9,10 +10,20 @@
 
 
 /* 
+  Array structure 
+*/
+
+
+var arr = [10, 20, 30];
+
+console.log(arr);
+
+
+/* 
   Basic usage
 
   1 access item
-  2 update item
+  2 change item
   3 get the number of item
 */
 

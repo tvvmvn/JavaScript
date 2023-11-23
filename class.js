@@ -1,25 +1,38 @@
 /* 
   * Class
-  Templates for JavaScript Objects.
+  Templates for JavaScript Objects (in a wide meaning).
 
-  1 class instance
-  2 Contructor
-  3 Inheritance
-  4 Static member
-  5 Built-in class
-  6 Literal notation
+  1 Class structure
+  2 Class and instance
+  3 Contructor
+  4 function member
+  5 Static member
+  6 Built-in class in JS
 */
 
 
+/*
+  Class structure
+*/
+
+
+// class name must be starts with uppercase letter
+class Beer {
+  // class member: variables that belongs to class
+  name;
+  origin;
+  available;
+}
+
+
 /* 
-  instance 
+  Class and instance 
 
   object that is created from class
 */
 
 
 class Beer {
-  // class member 
   name;
   origin;
   available;
@@ -53,12 +66,14 @@ console.log(dutchBeer instanceof Beer)
   process setting properties of instance 
 */
 
+
 class Beer {
   name;
   origin;
   available;
 
   constructor(name, origin, available) {
+    // this means instance
     this.name = name;
     this.origin = origin;
     this.available = available;
@@ -67,16 +82,17 @@ class Beer {
 
 var irishBeer = new Beer('Guinness', 'Ireland', false);
 
-console.log(irishBeer)
+console.log(irishBeer);
 
 
 /* 
-  function member of class
+  function member 
 */
+
 
 class Beer {
 
-  // members...
+  // other members...
 
   // function member
   drink() {
@@ -92,33 +108,32 @@ console.log(beer.drink())
 
 
 /*
-  Static property and method
+  static member
 
-  Provide useful work about class
+  Provide utilities about class
+  Class itself invoke
 */
+
 
 class Beer {
   
   // ...
 
-  // static property
-  static HISTORY = 'B.C 3000'
+  // static variables
+  static history = "B.C 3000";
 
-  // static method
+  // static function
   static brewing() {
-    return 'grains, hops, yeast and water'
+    return "grains, hops, yeast and water";
   }
 }
 
-// class itself invokes
-console.log(Beer.HISTORY)
+console.log(Beer.history)
 console.log(Beer.brewing())
 
 
 // Static properties of built-in class
-var pi = Math.PI;
-
-console.log(pi);
+console.log(Math.PI);
 // > 3.14
 
 
@@ -138,10 +153,10 @@ class Beer {
     return 'Cool';
   }
 
-  static history = 'B.C 3000'
+  static history = 'B.C 3000';
 
   static brewing() {
-    return 'grains, hops, yeast and water'
+    return 'grains, hops, yeast and water';
   }
 }
 
@@ -151,53 +166,36 @@ class Beer {
   
   1 Text processing: String
   2 Number and Date: Number, Math, Date
-  3 Indexed collections: Array
+  3 collections: Array
   4 Error: SyntaxError, ReferenceError and other error.
   5 Others: Promise, JSON, Object
 */
 
 
-/*
-  Literal notation
-
-  writes only value
-*/
-
-
-// Instance of String
-var foo = new String('bar'); 
-var foo = 'bar'; // literal notation
-
-
-// Instance of Number
-var year = new Number(2023); 
-var year = 2023; // literal notation
-
-
-// Class which is not supporting literal notation 
-var date = new Date();
-console.log(date)
-
-
-// Object VS Object
-// ..
+// time now
+console.log(new Date().toLocaleTimeString());
+// random fraction
+console.log(Math.round(0.5));
 
 
 /*
-  Q. Create an class <Car> to be following:
+  Q. Create an class <Car> to be following.
 
-  1 Class member: name, brand, color
+  1 Class member
+  name 
+  brand 
+  color
 
   2 it has constructor
 
   3 function member: sound
 
-  3 static method: getAge
-  get car's age if you pass purchased date.
+  3 static function
+  getAge: get car's age if you pass purchased date.
 */
 
+
 class Car {
-  // members
   name;
   brand;
   color;
@@ -222,3 +220,5 @@ const car = new Car('GV80', 'Genesis', 'Black');
 console.log(car)
 console.log(car.sound());
 console.log(Car.getAge(2020))
+
+
