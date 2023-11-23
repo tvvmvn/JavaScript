@@ -1,6 +1,7 @@
 /* 
   * Object
-  composition for data and function
+  A composition for variables and function.
+  It is used for unit to handle the data
   
   1 Structure 
   2 Basic usage
@@ -119,13 +120,16 @@ console.log(cat)
 
 
 /* 
-  Declare an object named korea
+  Declare an object named 'korea'
 
-  capital city
-  population
-  languague
-  isG7
-  ƒ?
+  1 properties
+  capital city: String
+  population: Number
+  languague: string
+  isG7: Boolean
+  
+  2 method
+  kpop - it plays kpop music
 */
 
 
@@ -157,11 +161,21 @@ console.log(irishBeer)
 
 
 var beers = [
-  { name: "Guinness", origin: "Ireland" },
-  { name: "Heineken", origin: "Netherlands" },
-  { name: "Budwiser", origin: "USA" },
+  { name: "Guinness", origin: "Ireland", available: false },
+  { name: "Heineken", origin: "Netherlands", available: true },
+  { name: "Budwiser", origin: "USA", available: true },
 ]
 
 for (let i=0; i<beers.length; i++) {
   console.log(beers[i].name.toUpperCase());
 }
+
+// additionally if need
+for (let i=0; i<beers.length; i++) {
+  if (beers[i].available == false) {
+    console.log(beers[i].name);
+  }
+}
+
+
+
