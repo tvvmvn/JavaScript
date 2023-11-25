@@ -1,6 +1,7 @@
 /* 
   * Class
   Templates for JavaScript Objects (in a wide meaning).
+  used for efficient object management
 
   1 Class structure
   2 Class and instance

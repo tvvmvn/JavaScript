@@ -1,7 +1,7 @@
 /* 
   * Object
   A composition for variables and function.
-  It is used for unit to handle the data
+  unit to handle the data
   
   1 Structure 
   2 Basic usage
@@ -120,6 +120,7 @@ console.log(cat)
 
 
 /* 
+  Q1.
   Declare an object named 'korea'
 
   1 properties
@@ -134,7 +135,7 @@ console.log(cat)
 
 
 /*
-  Q1. Irish beer is restocked.
+  Q2. Irish beer is restocked.
 */
 
 
@@ -151,7 +152,7 @@ console.log(irishBeer)
 
 
 /*
-  Q2. print each beer name with uppercase using Array loop.
+  Q3. print each beer name with uppercase using Array loop.
   
   result:
   GUINNESS
