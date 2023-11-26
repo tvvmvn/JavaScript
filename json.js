@@ -1,57 +1,52 @@
 /* 
-  * JSON (JavaScript Object Notation) 
-  text format to store and transfer JavaScript object
+  * JSON 
 
-  1 Object and JSON
+  1 What is JSON
   2 JSON.stringify
   3 JSON.parse
 */
 
 
 /*
-  Object and JSON
+  What is JSON 
+  It stands for JavaScript Object Notation
+  A text format to store or transfer JavaScript object
+
+  * structure
+  '{ "key": "value" }'
 */
 
 
-var o = { foo: 'bar' };
-// JSON format of 'o' object
-var json = '{ "foo": "bar" }';
+var cat = { name: "Kitty" };
+var cat_json = '{ "name": "Kitty" }';
 
-
-console.log(o)
-// > { foo: 'bar' }
-console.log(typeof o);
-// > object
-
-console.log(json)
-// { "foo": "bar" }
-console.log(typeof json)
-// > string
+console.log(typeof cat);
+console.log(typeof cat_json);
 
 
 /* 
   JSON.stringify
   
-  Object to JSON
+  It transforms Object to JSON
 */
 
 
-var o = { foo: 'bar' };
-var json = JSON.stringify(o)
+var cat = { name: "Kitty" };
+var cat_json = JSON.stringify(cat)
 
-console.log(json)
-// > { "foo": "bar" }
+console.log(cat_json)
+console.log(typeof cat_json)
 
 
 /*
   JSON.parse
   
-  JSON to Object
+  It transforms JSON to Object
 */
 
 
-var json = '{ "foo": "bar" }'
-var o = JSON.parse(json);
+var cat_json = '{ "name": "Kitty" }';
+var cat = JSON.parse(cat_json);
 
-console.log(o)
-// > { foo: 'bar' }
+console.log(cat)
+console.log(typeof cat)
