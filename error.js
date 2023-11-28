@@ -24,9 +24,11 @@ console.log(foo)
 /*
   Built-in Error
 
-  SyntaxError
-  ReferenceError
-  TypeError
+  1 SyntaxError
+  2 ReferenceError
+  refers to variable which does not exists
+  3 TypeError
+  inputs value of incorrect type to function.
 */
 
 
