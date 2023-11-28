@@ -2,7 +2,8 @@
   * Error and Exception
   
   1 Error
-  2 Exception 
+  2 Built-in Error 
+  3 Exception 
 */
 
 
@@ -14,12 +15,19 @@
 */
 
 
-// var foo;
-
 console.log(foo) 
 // name: ReferenceError
 // message: foo is not defind
 // stack: details
+
+
+/*
+  Built-in Error
+
+  SyntaxError
+  ReferenceError
+  TypeError
+*/
 
 
 /* 
@@ -35,41 +43,40 @@ console.log(foo)
 
   An error that a programmer generates intentionally
   when need it
+
+  e.g) authentication & authorization
 */
 
 
-var age = 15;
+var password = "123";
+var input = "12";
 
-console.log('a student:', 'Guinness, please');
-
-if (age < 18) {
+if (input != password) {
   // throw an exception
-  throw 'Too young to buy an alcohol';
+  throw "Password not match";
 }
-
-console.log('staff:', 'Here are Guinness');
 
 
 /*
   Exception handling
 
-  exception can be handled with try & catch syntax
+  Exception can be handled with try & catch syntax
+  program can keep runnning.
 */
 
 
-var age = 15;
-
-console.log('a student:', 'Guinness, please');
+var password = "123";
+var input = "12";
 
 try {
-
-  if (age < 18) {
-    throw 'Too young to buy an alcohol';
+  if (input != password) {
+    // throw an exception
+    throw "Password not match";
   }
-
+  
   // not executed
-  console.log('staff:', 'Here are Guinness');
+  console.log("Done");
 
-} catch (e) {
-  console.log(e);
+} catch (error) {
+  console.log("Error:", error);
 }

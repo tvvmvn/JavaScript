@@ -1,6 +1,7 @@
 /* 
   * Asychronous operations 
-  It is used to prevent blocking 
+  It is used to prevent blocking in program
+
   e.g) fetching resources from a server.
 
   1 Synchronous operations
@@ -11,7 +12,7 @@
 /*
   Synchronous operation
   
-  operations run in order 
+  operations run in order.
 */
 
 

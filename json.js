@@ -1,5 +1,5 @@
 /* 
-  * JSON 
+  JSON 
 
   1 What is JSON
   2 JSON.stringify
@@ -12,8 +12,8 @@
   It stands for JavaScript Object Notation
   A text format to store or transfer JavaScript object
 
-  * structure
-  '{ "key": "value" }'
+  - structure
+  { "key": "value" }
 */
 
 
