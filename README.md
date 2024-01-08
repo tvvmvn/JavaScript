@@ -6,8 +6,8 @@
 1. Data type 
 1. Basic method
 1. Operator
-1. Condition
-1. Loop
+1. Conditional statement
+1. Loop 
 1. Variables 
 1. Function
 1. Array

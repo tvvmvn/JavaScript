@@ -41,6 +41,8 @@ var foo = "bar"
 
 console.log(foo.indexOf("b"))
 // > 0
+console.log(foo.indexOf("ba"))
+// > 0
 console.log(foo.indexOf("z"))
 // > -1
 
