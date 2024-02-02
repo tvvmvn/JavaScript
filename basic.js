@@ -3,35 +3,47 @@ console.log("Hello JavaScript!")
 
 
 /*
-  Basic
+  Basic usage
   
-  1 letter case
+  1 available case in variable name
   2 how to comments
-  3 semicolon is optional.
+  3 how to use semicolon 
 */
 
 
 /* 
-  snake and camel
+  1 available case in variable name
+
   no kebab!
 */
 
+
+var lowercase;
 var snake_case;
 var camelCase;
 var kebab-case; // nope
 
 
-/* how to comments */
+/* 
+  2 how to comments 
+*/
+
 
 /*
-  multi-line comments
+  multi-line 
+  comments
 */
+
 
 // single-line comments
 
 
-/* semicolone is optional */
+/* 
+  3 how to use semicolon 
+*/
 
+
+var foo = "bar"
 var foo = "bar";
 
 

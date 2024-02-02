@@ -10,7 +10,7 @@
 /*
   String method
 
-  1 toUpperCase
+  1 toUpperCase / toLowerCase
   2 indexOf
   3 substring
   4 trim
@@ -18,9 +18,9 @@
 
 
 /*
-  1 toUpperCase()
+  1 toUpperCase() / toLowerCase()
 
-  convert all characters to upper case letter
+  convert all characters to uppercase/lowercase letter
 */
 
 

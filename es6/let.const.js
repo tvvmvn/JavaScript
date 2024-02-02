@@ -25,7 +25,7 @@ let foo = "baz"
   constant
 */
 
-const foo = "bar";
+const FOO = "bar";
 
 
 /* 
@@ -36,7 +36,7 @@ const foo = "bar";
 { // block
   var varInBlock = true;
   let letInBlock = true;
-  const constInBlock = true;
+  const CONST_IN_BLOCK = true;
 }
 
 console.log(varInBlock) 

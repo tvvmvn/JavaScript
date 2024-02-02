@@ -4,7 +4,7 @@
 ### JavaScript 1
 > Learn the fundamentals
 
-1. Basic
+1. Basic usage
 2. Data type 
 3. Basic method
 4. Operator
@@ -20,8 +20,8 @@
 14. JSON
 
 
-### JavaScript 2 (ES6)
-> Second major division with new syntax
+### JavaScript 2 
+> Learn ES6(Second major division with many new syntax)
 
 1. let, const
 2. New methods
