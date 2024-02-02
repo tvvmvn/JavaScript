@@ -5,27 +5,19 @@ console.log("Hello JavaScript!")
 /*
   Basic usage
   
-  1 available case in variable name
-  2 how to comments
-  3 how to use semicolon 
+  1 print method
+  1 how to comments
+  1 variable usage
 */
 
 
-/* 
-  1 available case in variable name
-
-  no kebab!
-*/
-
-
-var lowercase;
-var snake_case;
-var camelCase;
-var kebab-case; // nope
+// print
+console.log("hi there");
+// semi-colon is optional
 
 
 /* 
-  2 how to comments 
+  1 how to comments 
 */
 
 
@@ -34,17 +26,49 @@ var kebab-case; // nope
   comments
 */
 
-
 // single-line comments
 
 
-/* 
-  3 how to use semicolon 
+/*
+  # variable usage
+
+  1 what is variable 
+  container that stores value.
+  1 declare and define variable
+  2 available case in variable name
 */
 
 
-var foo = "bar"
+// declare and define
 var foo = "bar";
+
+console.log(foo);
+// > bar
+
+
+// declare 
+var foo; 
+// define
+foo = "bar";
+
+console.log(foo) 
+// > bar
+
+
+// define
+var foo = 'bar'
+// redefine
+foo = "baz"; 
+
+console.log(foo) 
+// > baz
+
+
+// case
+var lowercase;
+var snake_case;
+var camelCase;
+var kebab-case; // nope
 
 
 

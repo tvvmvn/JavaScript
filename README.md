@@ -4,7 +4,7 @@
 ### JavaScript 1
 > Learn the fundamentals
 
-1. Basic usage
+1. Intro
 2. Data type 
 3. Basic method
 4. Operator

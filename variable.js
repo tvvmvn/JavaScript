@@ -8,7 +8,7 @@
 
 
 /*
-Basic usage
+  Basic usage
 */
 
 
@@ -29,7 +29,7 @@ console.log(foo)
 
 
 // define
-var foo = 'bar'
+var foo = "bar"
 // redefine
 foo = "baz"; 
 
