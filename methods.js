@@ -1,6 +1,6 @@
 /*
   * Basic Methods 
-  it performs specific operation on data
+  It performs specific operation on data
 
   1 String method
   2 Number method
@@ -12,15 +12,15 @@
 
   1 toUpperCase
   2 indexOf
-  3 trim
-  4 substring
+  3 substring
+  4 trim
 */
 
 
 /*
-  toUpperCase
+  1 toUpperCase()
 
-  tranform all characters to upper case letter
+  convert all characters to upper case letter
 */
 
 
@@ -31,7 +31,7 @@ console.log(foo.toUpperCase());
 
 
 /*
-  indexOf(string to search)
+  2 indexOf(string to search)
 
   returns index of argument
 */
@@ -48,23 +48,9 @@ console.log(foo.indexOf("z"))
 
 
 /*
-  trim
+  3 substring(startIndex, endIndex)
 
-  remove spaces in front and rear of string
-  for example, data sanitization (정제)
-*/
-
-
-var foo = "  bar  ";
-
-console.log(foo.trim());
-// > bar
-
-
-/*
-  substring(startIndex, endIndex)
-
-  extract some characters from string
+  extract specific characters from string.
 */
 
 
@@ -72,6 +58,20 @@ var foo = "hello world"
 
 console.log(foo.substring(0, 4))
 // > hell
+
+
+/*
+  4 trim()
+
+  remove spaces in front and rear of string
+  e.g) data sanitization (정제)
+*/
+
+
+var foo = "  bar  ";
+
+console.log(foo.trim());
+// > bar
 
 
 /*
@@ -83,27 +83,27 @@ console.log(foo.substring(0, 4))
 
 
 /*
-  toPrecision
+  1 toPrecision(count of digits to represent)
 
-  set precision of Number value
+  set precision of number
 */
 
 
-var pi = Math.PI;
+var PI = Math.PI;
 
-console.log(pi)
+console.log(PI)
 // > 3.141592653589793 (16 digits)
 
 
-var precisePi = pi.toPrecision(100);
-console.log(precisePi)
+var precisePI = PI.toPrecision(100);
+console.log(precisePI)
 // > 3.14...
 
 
 /*
-  toString
+  2 toString()
 
-  transform Number value to String value
+  convert Number value to String value
 */
 
 
@@ -113,5 +113,6 @@ var yearInString = year.toString();
 
 console.log(yearInString.toString());
 // > "2023"
+
 console.log(typeof yearInString.toString());
 // > string

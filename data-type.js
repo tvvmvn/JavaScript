@@ -1,36 +1,44 @@
 /*
-  * DATA TYPE 
+  DATA TYPE 
 
   1 String
   2 Number
   3 Boolean
-  4 null
-  5 undefined
+  4 undefined
+  5 null
 */
 
 
 /* 
   String (문자열)
   
-  1 value
-  a sequence of characters. 
-
+  1 value of String
   2 access each character
-
   3 get the number of characters
 */
 
 
-// value inside '' or ""
+/*
+  1 value of String
+
+  sequence of characters. 
+  write down inside '' or ""
+*/
+
+
 var foo = "bar";
 
-console.log(foo); 
-// > foo
-console.log(typeof foo);
-// > string
+console.log(foo);
+// > bar
 
 
-// access each character
+/*
+  2 access each character
+
+  accessible with index
+*/
+
+
 console.log(foo[0]); 
 // > b
 console.log(foo[1]);
@@ -39,7 +47,13 @@ console.log(foo[2]);
 // > r
 
 
-// get the number of characters
+/*
+  3 get the number of characters
+  
+  length property
+*/
+
+
 console.log(foo.length);
 // > 3
 
@@ -47,9 +61,15 @@ console.log(foo.length);
 /*
   Number
   
-  1 value
-  1) integer
-  2) fraction number (분수)
+  1 value of Number type
+*/
+
+
+/*
+  1 value of Number type
+
+  1) Integer
+  2) Fraction number (분수)
   3) NaN(Not a number)
   4) +Infinity
   5) -Inifinity
@@ -60,11 +80,9 @@ console.log(foo.length);
 var year = 2023;
 console.log(year);
 // > 2023
-console.log(typeof year)
-// > number
 
 
-// fraction number
+// Fraction number
 var pi = 3.14
 console.log(pi);
 // > 3.14
@@ -76,25 +94,25 @@ console.log(nan);
 // > NaN
 
 
-// Max value of Number
+// Positive Infinity
+
+// max value of Number type
 var max_value = Number.MAX_VALUE;
 console.log(max_value);
 // > 1.7e+308
 
-
-// Negative max value of Number 
-var negative_max_value = -Number.MAX_VALUE;
-console.log(negative_max_value); 
-// > -1.7e+308
-
-
-// Positive Infinity
 var infinity = Number.MAX_VALUE * 1.1;
 console.log(infinity)
 // > Infinity
 
 
 // Negative Infinity
+
+// min value of Number type
+var negative_max_value = -Number.MAX_VALUE;
+console.log(negative_max_value); 
+// > -1.7e+308
+
 var negative_infinity = -Number.MAX_VALUE * 1.1;
 console.log(negative_infinity)
 // > -Infinity
@@ -102,8 +120,15 @@ console.log(negative_infinity)
 
 /*
   Boolean
+  a data type than has true or false value
 
-  1 value
+  1 value of Boolean type
+*/
+
+
+/*
+  1 value of Boolean type
+  
   true or false
 */
 
@@ -112,20 +137,46 @@ var bool = true;
 
 console.log(bool);
 // > true
-console.log(typeof bool) 
-// > boolean
 
 
-// Comparison operation return boolean.
+// for example, comparison operation return boolean.
 console.log(1 > 0);
 // > true
 
 
 /*
-  null
-  it means "empty"
+  undefined
+  data type that not defined variable has
 
-  1 value
+  1 value of undefined type
+*/ 
+ 
+ 
+ /*
+  1 value of undefined type
+  
+  undefined
+*/
+
+
+var foo;
+
+console.log(foo); 
+// > undefined
+
+
+/*
+  null
+  a data type that points to "empty".
+  (it's not actually a data type)
+  
+  1 value of null type
+*/
+ 
+ 
+ /*
+  1 value of null type
+  
   null
 */
 
@@ -134,25 +185,8 @@ var foo = null;
 
 console.log(foo); 
 // > null
-console.log(typeof foo);
-// > object
 
 
-/*
-  undefined
-  data type that not defined variable has
-
-  1 value
-  undefined
-*/ 
-
-
-var foo;
-
-console.log(foo); 
-// > undefined
-console.log(typeof foo); 
-// > undefined
 
 
 

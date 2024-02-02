@@ -30,7 +30,7 @@
 
 
 /*
-  The 4 rules
+  1 The 4 rules
 */
 
 
@@ -56,6 +56,7 @@ console.log(s);
 
 
 var s = "hello " + 2024;
+
 console.log(s);
 // > hello 2024
 console.log(typeof s)
