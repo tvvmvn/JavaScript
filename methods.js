@@ -33,7 +33,7 @@ console.log(foo.toUpperCase());
 /*
   2 indexOf(searchString, position(optional, default is 0))
 
-  returns index of argument
+  returns index of argument string
 */
 
 

@@ -190,7 +190,7 @@ console.log(foo);
 
 /*
   Q. Data Type
-  convert these info into variables.
+  convert these cat info into variables.
 
   1 name
   value: Kitty 
@@ -204,8 +204,8 @@ console.log(foo);
   value: 2 years-old
   type: number
 
-  4 isCute (cute or not)
-  value: yes 
+  4 isCute 
+  value: cute 
   type: Boolean
 */  
 

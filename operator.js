@@ -23,7 +23,10 @@
 /*
   1 The 4 rules
 
-  +, -, *, /
+  1) add (+)
+  2) subtract (-)
+  3) multiply (*)
+  4) divide (/)
 */
 
 
@@ -32,17 +35,19 @@ var subtract = 2 - 1;
 var divide = 1 / 2;
 var multiply = 1 * 2;
 
+
 console.log("1 + 1 =", add);
-// > 2
 console.log("2 - 1 =", subtract);
-// > 1
 console.log("1 / 2 =", divide);
-// > 0.5
 console.log("1 * 2 =", multiply)
+
+// > 2
+// > 1
+// > 0.5
 // > 2
 
 
-// # with String
+// # add sign with String
 var s = "hello" +  " world";
 
 console.log(s);
@@ -126,13 +131,14 @@ console.log(mod)
 
 var foo = "bar";
 
-console.log(foo) 
-// > bar
-
 
 /*
   2 Addition assignment operator
+  
   +=
+
+  performs addition on the two operands 
+  and assigns the result to the left operand.
 */ 
 
 
@@ -148,26 +154,18 @@ console.log(n)
   Comparison operator
 
   1 Equal operator
-  == 
   2 Strict equal operator
-  ===
   3 Not equal operator
-  != 
   4 Strict not equal operator
-  !==
   5 gt operator
-  > 
   6 gte operator
-  >= 
   7 lt operator
-  < 
   8 lte operator
-  <=
 */
 
 
 /*
-  Equal operation
+  1 Equal operator
 
   expr1 == expr2
 
@@ -177,37 +175,39 @@ console.log(n)
 
 
 console.log(1 == 2);
-// > false
 console.log("foo" == "bar");
-// > false
 console.log(0 == false);
-// > true
 console.log(2023 == "2023"); 
+
+// > false
+// > false
+// > true
 // > true
 
 
 /*
-  Strict equal operation
+  2 Strict equal operator
 
   expr1 === expr2
 
-  return true if exprs are equal
-  return false if exprs are not equal
+  return true if exprs are strictly equal
+  return false if exprs are strictly not equal
 */
 
 
 console.log(1 === 2); 
-// > false
 console.log("foo" === "bar");
-// > false
 console.log(0 === false); 
-// > false
 console.log(2023 === "2023"); 
+
+// > false
+// > false
+// > false
 // > false
 
 
 /*
-  Not equal operation
+  3 Not equal operator
 
   expr1 != expr2
 
@@ -227,39 +227,63 @@ console.log(2023 != "2023");
 
 
 /*
-  Strict not equal operation
+  4 Strict not equal operator
 
   expr1 !== expr2
 
-  return true if exprs are not equal
-  return false if exprs are equal
+  return true if exprs are strictly not equal
+  return false if exprs are strictly equal
 */
 
 
 console.log(1 !== 2) 
-// > true
 console.log("foo" !== "bar");
-// > true
 console.log(0 !== false); 
-// > true
 console.log(2023 !== "2023") 
+
 // > true
+// > true
+// > true
+// > true
+
+
+/*
+  5 gt(greater than) operator
+  >
+  6 gte(greater than or equal) operator
+  >=
+  7 lt(less than) operator
+  <
+  8 lte(less than or equal) operator
+  <=
+*/
+
+
+console.log(1 > 0);
+console.log(1 >= 0);
+console.log(1 < 0);
+console.log(1 <= 0);
+
+// true
+// false
+// false
+// false
 
 
 /*
   Logical operator
 
-  1 && (AND)
-  2 || (OR)
-  3 ! (NOT)
+  1 AND operator 
+  2 OR Operator
+  3 Not operator
 */
 
 
 /*
-&& (AND)
-expr 1 && expr 2 
+  1 AND operator
+  expr 1 && expr 2 
 
-return true when both expr1 and expr2 are true. 
+  return true when both expr1 and expr2 are true. 
 */
 
 
@@ -268,10 +292,10 @@ console.log(1 > 0 && 1 < 2)
 
 
 /* 
-|| (OR)
-expr 1 || expr 2 
+  2 OR Operator
+  expr 1 || expr 2 
 
-return true when one of them is true or both is true 
+  return true when either one is true or both are true
 */
 
 console.log(1 > 0 || 1 > 2) 
@@ -279,9 +303,10 @@ console.log(1 > 0 || 1 > 2)
 
 
 /* 
-! (NOT)
+  3 NOT Operator
+  !expr 
 
-!expr 
+  make expression reverse
 */
 
 
@@ -289,19 +314,17 @@ console.log(!true);
 // > false
 
 
-// NOT with not boolean type
-
-console.log("not 0:", !0);
-// > true
+// # NOT with no Boolean
 console.log("not number:", !2023);
-// > false
-console.log("not emptry string:", !"");
-// > true
+console.log("not 0:", !0);
 console.log("not string:", !"foo");
-// > false
+console.log("not emptry string:", !"");
 console.log("not null:", !null)
+
+// > false
 // > true
-console.log("not undefined:", !undefined)
+// > false
+// > true
 // > true
 
 
@@ -316,3 +339,24 @@ var foo = "bar";
 
 console.log(typeof foo); 
 // > string
+
+
+/*
+  Q. Operator
+
+  write down following sentences into codes (operation)
+  and print result out.
+
+  1. null and false are not equal.
+  2. empty string and null are not equal.
+  3. 1 is equal to true, and 0 is equal to false.
+*/
+
+
+console.log(null == false)
+console.log("" != null);
+console.log(1 == true && 0 == false)
+
+// false
+// true
+// true

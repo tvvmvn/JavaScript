@@ -2,8 +2,6 @@
   Conditional statement
   
   1 if statement
-  2 if else statement
-  3 else if statement
   2 switch statement
   3 ? (ternary) statement
 */
@@ -12,22 +10,31 @@
 /*
   if statement 
 
+  1 if statement
+  2 if/else statement
+  3 if/else if statement
+*/
+ 
+
+ /*
+  1 if statement
+  
   if (condition) {
     codes when condition is true
   }
 */
 
 
-var year = 2023
+var year = 2024
 
-if (year === 2023) {
-  console.log('This year')
+if (year === 2024) {
+  console.log("This year")
 }
 // > This year
 
 
 /*
-  if-else statement
+  2 if / else statement
 
   if (condition) {
     codes when condition is true
@@ -36,43 +43,47 @@ if (year === 2023) {
   }
 */
 
+var year = 2024;
 
-if (year === 2023) {
-  console.log('This year')
+if (year === 2024) {
+  console.log("This year")
 } else {
-  console.log('Not this year')
+  console.log("Not this year")
 }
 // > This year
 
 
 /*
-  else if statement
+  3 if / else if statement
 
   if (condition1) {
     codes when condition1 is true
   } else if (condition2) {
     codes when condition2 is true
-  } else {
+  } else { // optional
     codes when all conditions is false
   }
 */
 
 
-if (year === 2022) {
-  console.log('Last year')
-} else if (year === 2023) {
-  console.log('This year')
-} else if (year === 2024)  {
-  console.log('Next year')
+var year = 2024;
+
+if (year === 2023) {
+  console.log("Last year")
+} else if (year === 2024) {
+  console.log("This year")
+} else if (year === 2025)  {
+  console.log("Next year")
 } else {
-  console.log('Not close year');
+  console.log("Not close year");
 }
 // > This year
 
 
 /*
-  2 Switch
-  perform strict equal comparison operation.
+  Switch statement
+  performs strict equal comparison operation
+  between argument and case.
 
   1 Basic usage
   2 default block
@@ -80,48 +91,49 @@ if (year === 2022) {
 
 
 /* 
-Basic usage
+  1 Basic usage
 */
 
 
-var year = 2023;
+var year = 2024;
 
-switch(year) {
-  case 2022:
-    console.log('Last year');
-    break;
-
+switch (year) {
   case 2023:
-    console.log('This year');
+    console.log("Last year");
     break;
 
   case 2024:
-    console.log('Next year');
+    console.log("This year");
+    break;
+
+  case 2025:
+    console.log("Next year");
     break;
 }
+
 // > This year
 
 
 /*
-  default block
+  2 default keyword
 
   excuted when every case is false
 */
 
 
-var year = 2030;
+var year = 2024;
 
 switch(year) {
-  case 2022:
-    console.log('Last year');
-    break;
-
   case 2023:
-    console.log('This year');
+    console.log("Last year");
     break;
 
   case 2024:
-    console.log('Next year');
+    console.log("This year");
+    break;
+
+  case 2025:
+    console.log("Next year");
     break;
   
   default:
@@ -141,7 +153,7 @@ switch(year) {
 
 
 var year = 2023;
-var r = year === 2023 ? 'This year' : 'Not this year';
+var r = year === 2023 ? "This year" : "Not this year";
 
 console.log(r);
 // > This year
@@ -149,27 +161,32 @@ console.log(r);
 
 /*
   Q. Make conditional statements that prints 
-  he is an adult or not according to age variable
+  a person is an adult or not according to age variable
 
   1 if else statement
   2 ternary statement
 */
 
 
-// if else statement
+// 1 if / else statement
+
 var age = 20;
 
 if (age >= 18) {
-  console.log("He is an adult.")
+  console.log("an adult.")
 } else {
-  console.log("He is not an adult.")
+  console.log("not an adult.")
 }
-// > he is an adult
+
+// > an adult
 
 
-// ternary statement
+// 2 ternary statement
+
 var age = 20;
 
-var r = age >= 18 ? 'He is an adult' : 'He is not an adult';
+var r = age >= 18 ? "an adult" : "not an adult";
+
 console.log(r)
-// > he is an adult
+
+// > an adult

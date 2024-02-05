@@ -1,5 +1,5 @@
 /*
-  * Loop statement
+  Loop statement
   executes a block of code multiple times.
   
   1 for statement
@@ -8,23 +8,24 @@
 
 
 /* 
-  * for loop 
+  for loop 
 
   1 basic usage
   2 usecases
-  3 break
+  3 break keyword
+  4 continue keyword
 */
 
 
 /*
-  Basic usage
+  1 Basic usage
 
   for (expr1; expr2; expr3) 
-  {
+  { 
     codes to iterate
   }
 
-  expr1 - set initial value of variable
+  expr1 - set initial value of loop variable
   expr2 - loop condition
   expr3 - variable update operation
 */
@@ -37,7 +38,7 @@ for (var n = 1; n <= 10; n++) {
 
 
 /*
-  Usecases
+  2 Usecases
 */
 
 
@@ -53,26 +54,39 @@ console.log(sum);
 
 
 /*
-  break
+  3 break keyword
 
-  escaping from loop 
+  escaping from loop meeting specific condition
 */
 
 
-// Speed limit on 60km/h
-for (var speed = 0; speed < 200; speed++) {
-  
-  if (speed > 60) {
-    console.log("Slow down!")
+for (var n = 1; n <= 10; i++) {
+  if (n == 5) {
     break;
   }
 
-  console.log(speed + "km/h");
+  console.log(n);
+}
+
+
+/*
+  4 continue
+
+  skip block meeting specific condition
+*/
+
+
+for (var n = 1; n <= 10; n++) {
+  if (n == 5) {
+    continue;
+  }
+
+  console.log(n);
 }
 
 
 /* 
-  * while loop 
+  while loop 
 
   while (loop condition) {
     codes to iterate
@@ -93,16 +107,58 @@ while (n <= 10) {
 
 
 /*  
-  Q. get sum of 1/1, 1/2, 1/3, ... 1/10 using for loop
+  Q1. write down for / while statements 
+  that get sum of 1/1, 1/2, 1/3, ... 1/10.
 */
 
 
+// 1 for loop
 var sum = 0;
 
 for (var n = 1; n <= 10; n++) { 
-  sum += (1/n);
+  sum += (1 / n);
 }
 
 console.log(sum);
 
 
+// 2 while loop
+var n = 1;
+var sum = 0;
+
+while (n <= 10) {
+  sum += (1 / n);
+
+  n++;
+}
+
+console.log(sum);
+
+
+
+/*
+  Q2. write for statements that printing even numbers between 1 - 10.
+*/
+
+
+for (var n = 1; n <= 10; n++) {
+  if (n % 2 == 0) {
+    console.log(n);
+  }
+}
+
+
+for (var n = 1; n <= 10; n++) {
+  if (n % 2 == 1) {
+    continue;
+  }
+
+  console.log(n);
+}
+
+
+for (var n = 2; n <= 10; n += 2) {
+  if (n % 2 == 0) {
+    console.log(n);
+  }
+}
