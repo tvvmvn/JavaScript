@@ -64,7 +64,7 @@ console.log(foo)
 // > baz
 
 
-// case
+// case. semi-colon is option
 var lowercase;
 var snake_case;
 var camelCase;

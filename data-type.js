@@ -188,6 +188,33 @@ console.log(foo);
 
 
 
+/*
+  Q. Data Type
+  convert these info into variables.
+
+  1 name
+  value: Kitty 
+  type: String
+
+  2 home
+  value: no home (street cat)
+  type: null
+
+  3 age
+  value: 2 years-old
+  type: number
+
+  4 isCute (cute or not)
+  value: yes 
+  type: Boolean
+*/  
+
+
+var name = "Kitty";
+var home = null;
+var age = 2;
+var isCute = true;
+
 
 
 

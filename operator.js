@@ -1,5 +1,5 @@
 /*
-  * OPERATOR 
+  OPERATOR 
   
   1 Arithmetic operator
   2 Assignment operator
@@ -12,25 +12,18 @@
 /*
   Arithmetic operator
 
-  1 4-Rules
-  +, -, *, / 
-
+  1 The 4 rules
   2 increment operator
-  ++ 
-
   3 decrement operator
-  -- 
-
   4 exponentiation operator
-  ** 
-  
   5 modulus operator
-  % 
 */
 
 
 /*
   1 The 4 rules
+
+  +, -, *, /
 */
 
 
@@ -49,24 +42,32 @@ console.log("1 * 2 =", multiply)
 // > 2
 
 
-// + with String
+// # with String
 var s = "hello" +  " world";
+
 console.log(s);
 // > hello world
 
 
+// # add number with string
 var s = "hello " + 2024;
 
 console.log(s);
-// > hello 2024
-console.log(typeof s)
+// > "hello 2024"
+console.log(typeof s);
 // > string
 
 
 /*
-  increment & decrement operator
+  2 increment operator
+  increase variable by 1
+
+  var++
   
-  increase or decrease variable by 1
+  3 decrement operator
+  decrease variable by 1
+
+  var--
 */
 
 
@@ -79,22 +80,25 @@ console.log(i);
 
 
 /*
-  Exponentiation operator  
+  4 Exponentiation operator  
+  
+  base ** exponent
 */
  
  
-// base ** exponent
 var exp = 2 ** 7;
+
 console.log(exp);
 // > 128
 
 
 /*
-  Modulus (Devision remainder) operator
+  5 Modulus (Devision remainder) operator
+  
+  dividend % divisor
 */
  
  
-// dividend % divisor
 var mod = 5 % 2;
 
 console.log(mod)
@@ -105,35 +109,30 @@ console.log(mod)
   Assignment operator
 
   1 Variables assignment operator
-  = 
   2 Addition assignment operator
-  += 
   3 Substraction assignment operator
-  -= 
   4 Multiply assignment operator
-  *=
   5 Division assignment operator
-  /=
   6 Exponentiation assignment operator
-  **=
   7 Moduls assignment operator
-  %= 
 */
 
 
 /*
-variable assignment operator
+  1 Variable assignment operator
+  =
 */
 
 
-var foo = "bar"
+var foo = "bar";
 
 console.log(foo) 
 // > bar
 
 
 /*
-Addition assignment operator
+  2 Addition assignment operator
+  +=
 */ 
 
 

@@ -31,33 +31,40 @@ console.log(foo.toUpperCase());
 
 
 /*
-  2 indexOf(string to search)
+  2 indexOf(searchString, position(optional, default is 0))
 
   returns index of argument
 */
 
 
-var foo = "bar"
+var s = "hello world";
 
-console.log(foo.indexOf("b"))
-// > 0
-console.log(foo.indexOf("ba"))
-// > 0
-console.log(foo.indexOf("z"))
-// > -1
+console.log(s.indexOf("e"));
+//  1
+console.log(s.indexOf("l"));
+// 2
+console.log(s.indexOf("l", 5));
+// 9
+console.log(s.indexOf("world"));
+// 6
+console.log(s.indexOf("bar"));
+// -1
 
 
 /*
-  3 substring(startIndex, endIndex)
+  3 substring(startIndex, endIndex(optional))
 
   extract specific characters from string.
 */
 
 
-var foo = "hello world"
+var s = "hello world";
 
-console.log(foo.substring(0, 4))
-// > hell
+console.log(s.substring(0, 4))
+// hell
+
+console.log(s.substring(0));
+// hello world
 
 
 /*
@@ -107,12 +114,26 @@ console.log(precisePI)
 */
 
 
-// toString
 var year = 2023;
-var yearInString = year.toString();
 
-console.log(yearInString.toString());
+console.log(year.toString());
 // > "2023"
-
-console.log(typeof yearInString.toString());
+console.log(typeof year.toString());
 // > string
+
+
+
+/*
+  Q. Method
+
+  extract letters from Q to last letter from variables.
+*/
+
+
+var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+var startIndex = alphabet.indexOf("Q");
+
+console.log(alphabet.substring(startIndex));
+
+
