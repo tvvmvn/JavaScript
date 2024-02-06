@@ -12,7 +12,7 @@
 */
 
 
-// declare and define
+// declare and define (initialization)
 var foo = "bar";
 
 console.log(foo);
@@ -21,7 +21,8 @@ console.log(foo);
 
 // declare 
 var foo; 
-// define
+
+// define later
 foo = "bar";
 
 console.log(foo) 

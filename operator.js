@@ -347,16 +347,16 @@ console.log(typeof foo);
   write down following sentences into codes (operation)
   and print result out.
 
+  2. empty string and false are equal.
   1. null and false are not equal.
-  2. empty string and null are not equal.
   3. 1 is equal to true, and 0 is equal to false.
 */
 
 
-console.log(null == false)
-console.log("" != null);
+console.log("" == false);
+console.log(null != false);
 console.log(1 == true && 0 == false)
 
-// false
+// true
 // true
 // true

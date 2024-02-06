@@ -3,7 +3,7 @@
   executes a block of code multiple times.
   
   1 for statement
-  2 whie statement
+  2 while statement
 */
 
 
@@ -68,11 +68,13 @@ for (var n = 1; n <= 10; i++) {
   console.log(n);
 }
 
+// > 1, 2, 3, 4
+
 
 /*
   4 continue
 
-  skip block meeting specific condition
+  skip current block meeting specific condition
 */
 
 
@@ -98,7 +100,6 @@ for (var n = 1; n <= 10; n++) {
 var n = 1;
 
 while (n <= 10) {
-
   console.log(n + "times executed");
 
   // variable update operation
@@ -106,28 +107,44 @@ while (n <= 10) {
 };
 
 
-/*  
-  Q1. write down for / while statements 
-  that get sum of 1/1, 1/2, 1/3, ... 1/10.
+// # break, continue also can be used in while loop.
+var n = 1;
+
+while (true) {
+  if (n == 5) {
+    break;
+  }
+  
+  console.log(n);
+
+  n++;
+}
+
+
+/*
+  Q. additionally.
 */
 
 
-// 1 for loop
 var sum = 0;
 
-for (var n = 1; n <= 10; n++) { 
+for (var n = 1; n <= 10; n++) {
   sum += (1 / n);
 }
 
 console.log(sum);
 
 
-// 2 while loop
+/*  
+  Q1. write down while statements that get sum from 1 - 10.
+*/
+
+
 var n = 1;
 var sum = 0;
 
 while (n <= 10) {
-  sum += (1 / n);
+  sum += n;
 
   n++;
 }
@@ -147,7 +164,6 @@ for (var n = 1; n <= 10; n++) {
   }
 }
 
-
 for (var n = 1; n <= 10; n++) {
   if (n % 2 == 1) {
     continue;
@@ -155,7 +171,6 @@ for (var n = 1; n <= 10; n++) {
 
   console.log(n);
 }
-
 
 for (var n = 2; n <= 10; n += 2) {
   if (n % 2 == 0) {
