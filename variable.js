@@ -31,6 +31,7 @@ console.log(foo)
 
 // define
 var foo = "bar"
+
 // redefine
 foo = "baz"; 
 
@@ -41,11 +42,14 @@ console.log(foo)
 
 /*
   Global & local variable
+
+  1 Global variable
+  2 Local variable
 */
 
 
 /*
-  Global variable
+  1 Global variable
   
   Declared outside function 
   Accessible from anywhere in source code
@@ -55,11 +59,11 @@ console.log(foo)
 var varInGlobal = true;
 
 console.log(varInGlobal);
-// > true;
+// > true
 
 
 /*
-  Local variable 
+  2 Local variable 
   
   Declared inside function. 
   Only accessible in function that a variable is declared

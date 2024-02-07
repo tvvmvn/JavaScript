@@ -121,20 +121,6 @@ while (true) {
 }
 
 
-/*
-  Q. additionally.
-*/
-
-
-var sum = 0;
-
-for (var n = 1; n <= 10; n++) {
-  sum += (1 / n);
-}
-
-console.log(sum);
-
-
 /*  
   Q1. write down while statements that get sum from 1 - 10.
 */
@@ -173,7 +159,5 @@ for (var n = 1; n <= 10; n++) {
 }
 
 for (var n = 2; n <= 10; n += 2) {
-  if (n % 2 == 0) {
-    console.log(n);
-  }
+  console.log(n);
 }
