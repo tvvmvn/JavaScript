@@ -9,71 +9,65 @@
 
 
 /* 
-  Structrue 
+  Structure 
 
-  1 property
+  1 properties
   data that object has.
   it is composed of key and value
 
-  2 method
-  It is called methods when especially value is function.
+  2 methods
+  has function value in properties.
 */
 
 
 var cat = { 
-  // properties (key: value)
+  // key: value
   name: "Kitty", 
   home: null,
-  sound: function () { // method
+  sound: function () { // methods
     return "meow";
   }
 }
-
-console.log(cat);
 
 
 /* 
   Q. Structrue
   
-  Declare an object named 'korea'
+  Declare an object named 'Korea' to be following:
 
   - Properties
-  1 capital city
+  1 Capital city
   value: Seoul
   type: String
   
-  2 population
+  2 Population
   value: 5000
   type: Number
 
-  3 language
+  3 Language
   value: Korean
   type: string
 
-  4 G7 or not
+  4 Whether G7 or not
   value: No
   type: Boolean
   
   - Methods
-  kpop: it plays kpop music
+  1 K-POP music player
+  play K-POP music
 */
 
 
 /* 
   Basic usage
   
-  1 Access properties
-  2 add properties
-  2 edit properties
+  1 access properties
+  2 add / update properties
   3 delete properties
 */
 
 
-/*
-  access properties
-*/
-
-
+// 1 access properties
 var cat = { 
   name: "Kitty",
   home: null,
@@ -92,61 +86,28 @@ console.log(cat.color);
 // > undefined
 
 
-/* 
-  add properties
-*/
-
-
+// 2 add / update properties
 var cat = { 
   name: "Kitty",
   home: null,
-  sound: function () { 
-    return "meow";
-  }
 }
 
 cat.age = 2;
-console.log(cat);
-// > ..., age: 2
 
-
-/*
-  edit properties
-*/
-
-
-var cat = { 
-  name: "Kitty",
-  home: null,
-  sound: function () { 
-    return "meow";
-  }
+cat.sound = function () {
+  return "meow";
 }
-
 
 cat.home = "Samsan-dong";
-console.log(cat)
-// > ..., home: "Samsan-dong"
 
 
-/*
-  delete properties
-*/
-
-
+// 4 delete properties
 var cat = { 
   name: "Kitty",
   home: null,
-  sound: function () { 
-    return "meow";
-  }
 }
 
-
 delete cat.home;
-
-console.log(cat)
-// > no home 
 
 
 /*
@@ -179,7 +140,7 @@ for (let i=0; i<beers.length; i++) {
 /*
   Q2. Basic usage
 
-  Irish beer is restocked. 
+  Irish beer is restocked.
 */
 
 
@@ -190,9 +151,3 @@ var irishBeer = {
 }
 
 irishBeer.available = true;
-
-console.log(irishBeer)
-// > ..., available: true
-
-
-
