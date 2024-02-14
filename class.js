@@ -206,55 +206,6 @@ class Beer {
 
 
 /*
-  Built-in class in JavaScript
-  
-  1 Text processing: String
-  2 Number and Date: Number, Math, Date
-  3 collections: Array
-  4 Error: SyntaxError, ReferenceError and other error.
-  5 Others: Promise, JSON, Object
-*/
-
-
-// time now
-var time = new Date().toLocaleTimeString();
-// pi
-var PI = Math.PI;
-
-
-/*
-  7 An object in a wide meaning in JavaScript
-
-  1 example
-  2 literal notation
-*/
-
-
-/*
-  1 An example
-  
-  every value is object in a wide meaning.
-*/
-
-
-// string is object.
-var foo = "bar";
-
-console.log(foo.toUpperCase());
-
-
-/*
-  2 literal notation
-
-  write value only at right side.
-*/
-
-
-var foo = "bar";
-var foo = new String("bar");
-
-
-/*
   Q. Class
   Create an class <Car> to be following:
 
@@ -271,7 +222,7 @@ var foo = new String("bar");
 
   - static function
   1 getAge
-  get car"s age if you input purchased year.
+  get car age if you input purchased year.
 */
 
 
@@ -301,5 +252,54 @@ const car = new Car("GV80", "Genesis", "Black");
 console.log(car)
 console.log(car.sound());
 console.log(Car.getAge(2020))
+
+
+/*
+  Built-in class in JavaScript
+  
+  1 Text processing: String
+  2 Number and Date: Number, Math, Date
+  3 collections: Array
+  4 Error: SyntaxError, ReferenceError and other error.
+  5 Others: Promise, JSON, Object
+*/
+
+
+// time now
+var time = new Date().toLocaleTimeString();
+// pi
+var PI = Math.PI;
+
+
+/*
+  An object in a wide meaning in JavaScript
+
+  1 example
+  2 literal notation
+*/
+
+
+/*
+  1 An example
+  
+  every value is object in a wide meaning.
+*/
+
+
+// string is object.
+var foo = "bar";
+
+console.log(foo.toUpperCase());
+
+
+/*
+  2 literal notation
+
+  write value only at right side.
+*/
+
+
+var foo = "bar";
+var foo = new String("bar");
 
 

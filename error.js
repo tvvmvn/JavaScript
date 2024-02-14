@@ -2,56 +2,44 @@
   * Error and Exception
   
   1 Error
-  2 Built-in Error 
-  3 Exception 
+  2 Exception 
 */
 
 
 /* 
-  Error
+  Error (Bug)
 
   error stops program.
-  error must be handled.
+  error must be fixed.
 */
 
 
-console.log(foo) 
+console.log(foo)
 // name: ReferenceError
-// message: foo is not defind
+// message: foo is not defined
 // stack: details
-
-
-/*
-  Built-in Error
-
-  1 SyntaxError
-  2 ReferenceError
-  refers to variable which does not exists
-  3 TypeError
-  inputs value of incorrect type to function.
-*/
 
 
 /* 
   Exception 
 
-  1 What is exception
+  1 Concept
   2 Exception handling
 */
 
 
 /*
-  What is exception
+  1 Concept
 
   An error that a programmer generates intentionally
   when need it
 
-  e.g) authentication & authorization
+  e.g) Authentication & Authorization
 */
 
 
-var password = "123";
 var input = "12";
+var password = "123";
 
 if (input != password) {
   // throw an exception
@@ -60,10 +48,9 @@ if (input != password) {
 
 
 /*
-  Exception handling
+  2 Exception handling
 
-  Exception can be handled with try & catch syntax
-  program can keep runnning.
+  try & catch syntax handles exception.
 */
 
 
@@ -77,8 +64,8 @@ try {
   }
   
   // not executed
-  console.log("Done");
+  console.log("login success");
 
 } catch (error) {
-  console.log("Error:", error);
+  console.log("login fail:", error);
 }

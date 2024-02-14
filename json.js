@@ -9,39 +9,35 @@
 
 /*
   What is JSON 
+  
   It stands for JavaScript Object Notation
   A text format to store or transfer JavaScript object
-
-  - structure
-  { "key": "value" }
 */
+ 
 
-
-var cat = { name: "Kitty" };
 var cat_json = '{ "name": "Kitty" }';
 
-console.log(typeof cat);
 console.log(typeof cat_json);
 
 
 /* 
-  JSON.stringify
+  JSON.stringify()
   
-  It transforms Object to JSON
+  It converts Object to JSON
 */
 
 
 var cat = { name: "Kitty" };
-var cat_json = JSON.stringify(cat)
+var cat_json = JSON.stringify(cat);
 
 console.log(cat_json)
 console.log(typeof cat_json)
 
 
 /*
-  JSON.parse
+  JSON.parse()
   
-  It transforms JSON to Object
+  It converts JSON to Object
 */
 
 
