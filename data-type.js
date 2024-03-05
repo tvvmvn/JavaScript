@@ -61,8 +61,7 @@ console.log(nan);
 // Positive Infinity
 
 // max value of Number type
-var max_value = Number.MAX_VALUE;
-console.log(max_value);
+console.log(Number.MAX_VALUE);
 // > 1.7e+308
 
 var infinity = Number.MAX_VALUE * 1.1;
@@ -73,8 +72,7 @@ console.log(infinity)
 // Negative Infinity
 
 // min value of Number type
-var negative_max_value = -Number.MAX_VALUE;
-console.log(negative_max_value); 
+console.log(-Number.MAX_VALUE); 
 // > -1.7e+308
 
 var negative_infinity = -Number.MAX_VALUE * 1.1;
@@ -95,7 +93,7 @@ console.log(bool);
 // > true
 
 
-// for example, comparison operation return boolean.
+// comparison operation return Boolean value.
 console.log(1 > 0);
 // > true
 
@@ -129,13 +127,13 @@ console.log(foo);
 /*
   Q. Data Type
 
-  writes cat info below into variables.
-  (data type or value inside bracket)
+  convert cat info below into variables.
+  (Data type or value inside bracket)
 
-  his name is Kitty. (String)
-  she is street cat, so he has no sweet home. (null)
-  she is 2 years old. (Number)
-  she is cute. (Boolean)
+  1 name: Kitty (String)
+  2 age: 2 years old (Number)
+  3 cute or not: yes (Boolean)
+  4 home: no home cuz she is street cat (null)
 */  
 
 

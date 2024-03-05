@@ -1,7 +1,11 @@
 
 
-/* multiline comments */
 // one line comment
+
+/* 
+multiline 
+comments 
+*/
 
 
 /*
@@ -27,7 +31,7 @@ console.log("foo");
 */
 
 
-// var: a reserved word for variable
+// var - a reserved word for variable
 var foo = "bar";
 
 console.log(foo);
