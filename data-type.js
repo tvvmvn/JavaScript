@@ -5,74 +5,38 @@
   2 Number
   3 Boolean
   4 undefined
-  5 null
+  5 null 
 */
 
 
 /* 
   String (문자열)
-  
-  1 value of String
-  2 access each character
-  3 get the number of characters
-*/
-
-
-/*
-  1 value of String
-
   sequence of characters. 
   write down inside '' or ""
 */
 
 
 var foo = "bar";
-
 console.log(foo);
-// > bar
 
 
-/*
-  2 access each character
-
-  accessible with index
-*/
+var foo = 'bar';
+console.log(foo);
 
 
-console.log(foo[0]); 
-// > b
-console.log(foo[1]);
-// > a
-console.log(foo[2]); 
-// > r
-
-
-/*
-  3 get the number of characters
-  
-  length property
-*/
-
-
-console.log(foo.length);
-// > 3
+console.log('I\'m not a Gay');
 
 
 /*
   Number
   
-  1 value of Number type
-*/
+  types of value
 
-
-/*
-  1 value of Number type
-
-  1) Integer
-  2) Fraction number (분수)
-  3) NaN(Not a number)
-  4) +Infinity
-  5) -Inifinity
+  1. Integer
+  2. Fraction number (분수)
+  3. NaN(Not a number)
+  4. +Infinity
+  5. -Inifinity
 */
 
 
@@ -120,16 +84,8 @@ console.log(negative_infinity)
 
 /*
   Boolean
-  a data type than has true or false value
-
-  1 value of Boolean type
-*/
-
-
-/*
-  1 value of Boolean type
   
-  true or false
+  It has value of true or false
 */
 
 
@@ -146,17 +102,9 @@ console.log(1 > 0);
 
 /*
   undefined
-  data type that not defined variable has
-
-  1 value of undefined type
+  data type that not defined variable has.
+  value is also undefined.
 */ 
- 
- 
- /*
-  1 value of undefined type
-  
-  undefined
-*/
 
 
 var foo;
@@ -167,46 +115,27 @@ console.log(foo);
 
 /*
   null
-  a data type that points to "empty".
-  (it's not actually a data type)
-  
-  1 value of null type
-*/
- 
- 
- /*
-  1 value of null type
-  
-  null
+
+  Not a data type. It points to "empty".
 */
 
-
+ 
 var foo = null;
 
 console.log(foo); 
 // > null
 
 
-
 /*
   Q. Data Type
-  convert these cat info into variables.
 
-  1 name
-  value: Kitty 
-  type: String
+  writes cat info below into variables.
+  (data type or value inside bracket)
 
-  2 home
-  value: no home (street cat)
-  type: null
-
-  3 age
-  value: 2 years-old
-  type: number
-
-  4 isCute 
-  value: cute 
-  type: Boolean
+  his name is Kitty. (String)
+  she is street cat, so he has no sweet home. (null)
+  she is 2 years old. (Number)
+  she is cute. (Boolean)
 */  
 
 

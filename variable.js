@@ -1,50 +1,8 @@
 /* 
-  Variables 
-  container that store value
+  Variables scope
   
-  1 Basic usage
-  2 Global & local variable
-*/
-
-
-/*
-  Basic usage
-*/
-
-
-// declare and define (initialization)
-var foo = "bar";
-
-console.log(foo);
-// > bar
-
-
-// declare 
-var foo; 
-
-// define later
-foo = "bar";
-
-console.log(foo) 
-// > bar
-
-
-// define
-var foo = "bar"
-
-// redefine
-foo = "baz"; 
-
-console.log(foo) 
-// > baz
-
-
-
-/*
-  Global & local variable
-
-  1 Global variable
-  2 Local variable
+  1 Global
+  2 Local
 */
 
 

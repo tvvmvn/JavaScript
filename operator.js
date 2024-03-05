@@ -47,22 +47,6 @@ console.log("1 * 2 =", multiply)
 // > 2
 
 
-// # add sign with String
-var s = "hello" +  " world";
-
-console.log(s);
-// > hello world
-
-
-// # add number with string
-var s = "hello " + 2024;
-
-console.log(s);
-// > "hello 2024"
-console.log(typeof s);
-// > string
-
-
 /*
   2 increment operator
   increase variable by 1

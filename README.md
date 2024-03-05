@@ -4,13 +4,13 @@
 ### JavaScript 1
 > Learn the fundamentals
 
-1. Intro
+1. Basic
 2. Data type 
-3. Basic method
+3. String
 4. Operator
 5. Conditional statement
 6. Loop 
-7. Variables 
+7. Variables scope
 8. Function
 9. Array
 10. Object
