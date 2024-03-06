@@ -101,7 +101,7 @@ console.log(foo.toUpperCase());
 /*
   2 indexOf(searchString, position)
 
-  It returns index of argument string.
+  It gets index of argument string.
   position is optional, default is 0
 */
 

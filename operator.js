@@ -23,49 +23,57 @@
 /*
   1 The 4 rules
 
-  1) add (+)
-  2) subtract (-)
-  3) multiply (*)
-  4) divide (/)
+  +, -, *, /
 */
 
 
 var add = 1 + 1;
 var subtract = 2 - 1;
+var multiply = 2 * 2;
 var divide = 1 / 2;
-var multiply = 1 * 2;
 
 
 console.log("1 + 1 =", add);
 console.log("2 - 1 =", subtract);
-console.log("1 / 2 =", divide);
 console.log("1 * 2 =", multiply)
+console.log("1 / 2 =", divide);
 
 // > 2
 // > 1
 // > 0.5
-// > 2
+// > 4
 
 
 /*
   2 increment operator
   increase variable by 1
 
-  var++
-  
-  3 decrement operator
-  decrease variable by 1
-
-  var--
+  variables++
 */
 
 
-var i = 1;
+var n = 1;
 
-i++;
+n++;
 
-console.log(i);
+console.log(n);
 // > 2
+
+
+/*
+  3 decrement operator
+  decrease variable by 1
+
+  variables--
+*/
+
+
+var n = 1;
+
+n--;
+
+console.log(n);
+// > 0
 
 
 /*
@@ -73,7 +81,7 @@ console.log(i);
   
   base ** exponent
 */
- 
+
  
 var exp = 2 ** 7;
 
@@ -82,8 +90,9 @@ console.log(exp);
 
 
 /*
-  5 Modulus (Devision remainder) operator
-  
+  5 Modulus operator
+  It returns modulus of division
+
   dividend % divisor
 */
  
@@ -109,7 +118,9 @@ console.log(mod)
 
 /*
   1 Variable assignment operator
-  =
+  assign variable to value.
+
+  variable = value
 */
 
 
@@ -119,16 +130,17 @@ var foo = "bar";
 /*
   2 Addition assignment operator
   
-  +=
-
-  performs addition on the two operands 
-  and assigns the result to the left operand.
+  performs addition on the two operands and
+  assigns the result to the left operand.
+  
+  operand1 += operand2
 */ 
 
 
 var n = 1;
 
-n += 1; // n = n + 1
+// n = n + 1
+n += 1; 
 
 console.log(n) 
 // > 2
@@ -201,12 +213,13 @@ console.log(2023 === "2023");
 
 
 console.log(1 != 2) 
-// > true
 console.log("foo" != "bar");
-// > true
 console.log(0 != false);
-// > false
 console.log(2023 != "2023");
+
+// > true
+// > true
+// > false
 // > false
 
 
@@ -234,10 +247,13 @@ console.log(2023 !== "2023")
 /*
   5 gt(greater than) operator
   >
+
   6 gte(greater than or equal) operator
   >=
+
   7 lt(less than) operator
   <
+
   8 lte(less than or equal) operator
   <=
 */
@@ -248,41 +264,44 @@ console.log(1 >= 0);
 console.log(1 < 0);
 console.log(1 <= 0);
 
-// true
-// false
-// false
-// false
+// > true
+// > false
+// > false
+// > false
 
 
 /*
   Logical operator
 
-  1 AND operator 
-  2 OR Operator
-  3 Not operator
+  1 && (AND)
+  2 || (OR)
+  3 ! (NOT)
 */
 
 
 /*
-  1 AND operator
+  1 && (AND)
   expr 1 && expr 2 
 
   return true when both expr1 and expr2 are true. 
+  if not, return false.
 */
 
 
-console.log(1 > 0 && 1 < 2) 
+console.log(1 > 0 && 1 < 2);
 // > true
 
 
 /* 
-  2 OR Operator
+  2 || (OR)
   expr 1 || expr 2 
 
   return true when either one is true or both are true
+  if not, return false.
 */
 
-console.log(1 > 0 || 1 > 2) 
+
+console.log(1 > 0 || 1 > 2);
 // > true
 
 
@@ -299,11 +318,11 @@ console.log(!true);
 
 
 // # NOT with no Boolean
-console.log("not number:", !2023);
-console.log("not 0:", !0);
-console.log("not string:", !"foo");
-console.log("not emptry string:", !"");
-console.log("not null:", !null)
+console.log("숫자 부정:", !2023);
+console.log("0 부정:", !0);
+console.log("문자열 부정:", !"foo");
+console.log("빈문자열 부정:", !"");
+console.log("null 부정:", !null);
 
 // > false
 // > true
@@ -328,18 +347,18 @@ console.log(typeof foo);
 /*
   Q. Operator
 
-  write down following sentences into codes (operation)
+  converts following sentences into codes (operation)
   and print result out.
 
-  2. empty string and false are equal.
-  1. null and false are not equal.
+  1. empty string and false are equal.
+  2. null and false are not equal.
   3. 1 is equal to true, and 0 is equal to false.
 */
 
 
 console.log("" == false);
 console.log(null != false);
-console.log(1 == true && 0 == false)
+console.log(1 == true && 0 == false);
 
 // true
 // true

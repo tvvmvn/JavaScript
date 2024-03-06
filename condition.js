@@ -16,7 +16,7 @@
 */
  
 
- /*
+/*
   1 if statement
   
   if (condition) {
@@ -27,17 +27,11 @@
 
 var year = 2024
 
-if (year === 2024) {
+if (year == 2024) {
   console.log("This year")
 }
 
 // > This year
-
-
-// empty string, null, 0 in condition is considered as false.
-if ("") { 
-  console.log("not executed");
-}
 
 
 /*
@@ -53,7 +47,7 @@ if ("") {
 
 var year = 2024;
 
-if (year === 2024) {
+if (year == 2024) {
   console.log("This year")
 } else {
   console.log("Not this year")
@@ -68,7 +62,7 @@ if (year === 2024) {
     codes when condition1 is true
   } else if (condition2) {
     codes when condition2 is true
-  } else { optional
+  } else { // optional
     codes when all conditions is false
   }
 */
@@ -76,13 +70,13 @@ if (year === 2024) {
 
 var year = 2024;
 
-if (year === 2023) {
+if (year == 2023) {
   console.log("Last year")
-} else if (year === 2024) {
+} else if (year == 2024) {
   console.log("This year")
-} else if (year === 2025)  {
+} else if (year == 2025)  {
   console.log("Next year")
-} else {
+} else { 
   console.log("Not close year");
 }
 
@@ -127,7 +121,7 @@ switch (year) {
   2 default keyword
 
   default expression is excuted 
-  when every case is false
+  when every case is not matched
 */
 
 
@@ -162,17 +156,18 @@ switch(year) {
 
 
 var year = 2024;
-var r = year === 2024 ? "This year" : "Not this year";
+var r = year == 2024 ? "This year" : "Not this year";
 
 console.log(r);
 // > This year
 
 
 /*
-  Q1. Make conditional statements that prints 
-  a person is an adult or not according to age variable
+  Q1. Make conditional statements that prints out
+  whether a person is an adult or not 
+  according to age variable
 
-  1 if else /  statement
+  1 if else / statement
   2 ternary statement
 */
 
@@ -203,19 +198,16 @@ console.log(r)
 
 /*
   Q2. write down switch statement that
-  prints car price when inputs car name.
-  (if car is not being sold, prints proper message)
+  prints car price when inputs car name
+  referring to table below.
+  if car is not being sold, prints proper message out.
 
   - Hybrid / Electric Car list
 
-  1 Avante Hybrid 
-  2500
-  2 XM3 Hybrid
-  3000
-  3 KONA 
-  4500
-  3 IONIQ 6
-  5000
+  1 Avante Hybrid, 2500
+  2 XM3 Hybrid, 3000
+  3 KONA, 4500
+  4 IONIQ 6, 5000
 */
 
 
