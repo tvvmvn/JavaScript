@@ -1,8 +1,8 @@
 /* 
   Variables scope
   
-  1 Global
-  2 Local
+  1 Global variable
+  2 Local variable
 */
 
 

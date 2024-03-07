@@ -2,8 +2,8 @@
   Conditional statement
   
   1 if statement
-  2 switch statement
-  3 ? (ternary) statement
+  2 ? (ternary) statement
+  3 switch statement
 */
 
 
@@ -83,6 +83,58 @@ if (year == 2023) {
 // > This year
 
 
+/* 
+  ? (ternary) statement
+
+  condition ? value1 : value2
+  
+  condition is true, return value 1 
+  condition is false, return value 2
+*/
+
+
+var year = 2024;
+var r = year == 2024 ? "This year" : "Not this year";
+
+console.log(r);
+// > This year
+
+
+/*
+  Q1. Make conditional statements that prints out
+  whether a person is an adult or not 
+  according to age variable
+
+  1 if else / statement
+  2 ternary statement
+*/
+
+
+// 1 if / else statement
+
+var age = 20;
+
+if (age >= 18) {
+  console.log("an adult.")
+} else {
+  console.log("not an adult.")
+}
+
+// > an adult
+
+
+// 2 ternary statement
+
+var age = 20;
+
+var r = age >= 18 ? "an adult" : "not an adult";
+
+console.log(r)
+
+// > an adult
+
+
+
 /*
   Switch statement
   performs strict equal comparison operation
@@ -143,57 +195,6 @@ switch(year) {
   default:
     console.log("Not a close year");
 }
-
-
-/* 
-  ? (ternary) statement
-
-  condition ? value1 : value2
-  
-  condition is true, return value 1 
-  condition is false, return value 2
-*/
-
-
-var year = 2024;
-var r = year == 2024 ? "This year" : "Not this year";
-
-console.log(r);
-// > This year
-
-
-/*
-  Q1. Make conditional statements that prints out
-  whether a person is an adult or not 
-  according to age variable
-
-  1 if else / statement
-  2 ternary statement
-*/
-
-
-// 1 if / else statement
-
-var age = 20;
-
-if (age >= 18) {
-  console.log("an adult.")
-} else {
-  console.log("not an adult.")
-}
-
-// > an adult
-
-
-// 2 ternary statement
-
-var age = 20;
-
-var r = age >= 18 ? "an adult" : "not an adult";
-
-console.log(r)
-
-// > an adult
 
 
 /*

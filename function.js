@@ -1,7 +1,7 @@
 /*
-  * Function
-  a block of codes excuted when invoked.
-  used for function unit in programming.
+  Function
+  a block excuted when invoked.
+  used for unit for function in programming.
 
   1 Function declaration and invoke
   2 Hoisting
@@ -32,7 +32,7 @@ var f = function () {
 }
 
 // invoke
-f() 
+f();
 
 
 /* 
@@ -40,8 +40,7 @@ f()
 
   you can declare function below invoke.
   a sort of readability option.
-  
-  * not applied to function expression
+  It's not applied to function expression.
 */
 
 
@@ -63,13 +62,12 @@ function f() {
 */
 
 
-// function adding two arguments.
-
 function add(x, y) { // x, y are parameters
   console.log("result:", x + y);
 }
 
 add(1, 2); // 1, 2 are arguments
+
 // > result: 3
 
 
@@ -87,20 +85,21 @@ function add(x, y) {
 var r = add(1, 2);
 
 console.log("result:", r);
-// > add result: 3
+
+// > result: 3
 
 
 // return also can be used to stop task.
-function isNegative(n) {
-  if (n < 0) {
-    console.log("negative");
+function getSquare(n) {
+  if (typeof n != "number") {
+    console.log("err: wrong input");
     return;
   }
 
-  console.log("not negative");
+  console.log(n ** 2);
 }
 
-isNegative(-1);
+getSquare(null);
 
 
 /*
@@ -108,8 +107,8 @@ isNegative(-1);
 
   function argument
 
-  1 basic usage
-  2 realworld example
+  1 Basic
+  2 Realworld example
 */
 
 
@@ -144,13 +143,13 @@ setInterval(getTime, 1000);
 /*
   Q1. create function that prints 
   whether person an adult or not according to age input.
+  if input is wrong, print error message.
 */
 
 
 function isAdult(age) {
-  // additional
   if (typeof age !== "number") {
-    console.log("input must be Number type");
+    console.log("err: input must be Number");
     return; 
   }
 
@@ -165,7 +164,7 @@ isAdult(20);
 
 
 /*
-  Q2. create function that return sum from 1 to argument.
+  Q2. create function that return sum from 1 to input.
 */
 
 
@@ -182,3 +181,4 @@ function f(m) {
 var r = f(10);
 
 console.log(r);
+// > 55
