@@ -10,11 +10,11 @@
 
 
 /* 
-  Array structure 
+  structure 
 */
 
 
-// items (values) in square bracket.
+// values seperated by comma in square brackes.
 var arr = [10, 20, 30];
 
 console.log(arr);
@@ -25,7 +25,7 @@ console.log(arr);
 
   1 access item
   2 change item
-  4 get the number of item
+  3 get the number of item
 */
 
 
@@ -63,17 +63,18 @@ console.log(arr.length);
 /*
   Q. Basic usage
 
-  1 Create a list including TOP 5 car manufacturers.
+  1 Create TOP 5 car manufacturers list.
   - Volvo, BMW, Hyundai, Toyota, Ford
 
   2 Change Toyota to Kia.
 */
 
-var top5brands = ["Volvo", "Renault", "Hyundai", "Toyota", "Ford"];
 
-top5brands[3] = "Kia";
+var top5 = ["Volvo", "Renault", "Hyundai", "Toyota", "Ford"];
 
-console.log(top5brands);
+top5[3] = "Kia";
+
+console.log(top5);
 
 
 /* 
@@ -89,9 +90,11 @@ console.log(top5brands);
 
 
 /*
-  1 push(newItem1, newItem2, ...)
-
+  1 push
   add new item at the end of an array
+
+  - 
+  push(newItem1, newItem2, ...)
 */
 
 
@@ -106,6 +109,7 @@ console.log(arr);
 /* 
   2 pop()
 
+  -
   remove last item of an array
 */
 
@@ -119,17 +123,19 @@ console.log(arr);
 
 
 /*
-  3 array1.concat(array2, array3, ...) 
-
+  3 concat
   concatenate another arrays after an array1
   return an new array
+
+  - 
+  concat(array1, array2, ...) 
 */
 
 
-var arr1 = [10, 20];
-var arr2 = [30, 40];
+var arr = [10, 20];
+var arr1 = [30, 40];
 
-var r = arr1.concat(arr2); 
+var r = arr.concat(arr1); 
 
 console.log(r);
 // > 10, 20, 30, 40
@@ -137,12 +143,20 @@ console.log(r);
 
 /*
   4 splice
-  add or remove items at position you want
+  add or remove items at position you want.
 
-  - how to use
+  - 
   splice(startIndex, deleteCount, newItem1, newItem2, ..)
   startIndex is required.
 */
+
+
+var arr = [10, 20, 30, 40];
+
+arr.splice(2, 1);
+console.log(arr);
+// > 10, 20, 40
+
 
 var arr = [10, 20, 30, 40];
 
@@ -150,11 +164,6 @@ arr.splice(2);
 console.log(arr);
 // > 10, 20
 
-var arr = [10, 20, 30, 40];
-
-arr.splice(2, 1);
-console.log(arr);
-// > 10, 20, 40
 
 var arr = [10, 20, 30, 40];
 
@@ -210,24 +219,11 @@ var asianCars = koreanCars.concat(japaneseCars);
   Loop array
   perform some operations to array.
 
-  1 update each item in array
-  2 filtering array
+  1 an example
 */
 
 
-// 1 update each item - multiply each item by 10.
-var arr = [10, 20, 30];
-
-for (var i = 0; i < arr.length; i++) {
-  console.log(arr[i] * 10);
-}
-
-// > 100 
-// > 200
-// > 300
-
-
-// 2 filtering an array - print only adults
+// an examples - print only adults (filtering)
 var ages = [12, 19, 23, 30];
 
 for (var i = 0; i < arr.length; i++) {
@@ -242,21 +238,7 @@ for (var i = 0; i < arr.length; i++) {
 
 
 /* 
-  Q1. Loop array
-
-  prints each brand names in uppercase letters
-*/
-
-
-var brands = ["apple", "samsung", "huawei"];
-
-for (var i=0; i < brands.length; i++) {
-  console.log(brands[i].toUpperCase());
-}
-
-
-/* 
-  Q2. Loop array
+  Q. Loop array
 
   print items starts with b
 */
@@ -264,11 +246,12 @@ for (var i=0; i < brands.length; i++) {
 
 var arr = ["foo", "bar", "baz"];
 
-for (var i=0; i<arr.length; i++) {
+for (var i = 0; i < arr.length; i++) {
   if (arr[i][0] == "b") {
     console.log(arr[i]);
   }
 }
+
 
 // > bar
 // > baz

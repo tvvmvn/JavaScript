@@ -141,7 +141,8 @@ setInterval(getTime, 1000);
 
 
 /*
-  Q1. create function that prints 
+  Q1. function
+  create function that prints 
   whether person an adult or not according to age input.
   if input is wrong, print error message.
 */
@@ -164,7 +165,8 @@ isAdult(20);
 
 
 /*
-  Q2. create function that return sum from 1 to input.
+  Q2. function
+  create function that return sum from 1 to input.
 */
 
 

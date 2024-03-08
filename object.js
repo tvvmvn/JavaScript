@@ -1,6 +1,6 @@
 /* 
   * Object
-  A composition for variables and function.
+  A composition for data and function.
   used for unit to handle the data
   
   1 Structure 
@@ -33,29 +33,35 @@ var cat = {
 /* 
   Q. Structrue
   
-  Declare an object named 'Korea' to be following:
+  Declare an object named 'korea' to be following:
 
   - Properties
-  1 Capital city
-  value: Seoul
-  type: String
+  1 Capital city (String)
+  Seoul
   
-  2 Population
-  value: 5000
-  type: Number
+  2 Population (Number)
+  5000
 
-  3 Language
-  value: Korean
-  type: string
+  3 Language (String)
+  Korean
 
-  4 Whether G7 or not
-  value: No
-  type: Boolean
+  4 Whether G7 or not (Boolean)
+  No
   
   - Methods
   1 K-POP music player
-  play K-POP music
 */
+
+
+var korea = {
+  capitalCity: "Seoul",
+  population: 5000,
+  language: "Korean",
+  isG7: false,
+  kpop: function () {
+    return "Hype boy";
+  }
+}
 
 
 /* 
@@ -63,7 +69,7 @@ var cat = {
   
   1 access properties
   2 add / update properties
-  3 delete properties
+  4 delete properties
 */
 
 
@@ -76,10 +82,11 @@ var cat = {
   }
 }
 
+
 console.log(cat.name);
 // > Kitty
 console.log(cat["name"]);
-// > null
+// > Kitty
 console.log(cat.sound());
 // > meow
 console.log(cat.color);
@@ -92,12 +99,9 @@ var cat = {
   home: null,
 }
 
+// add
 cat.age = 2;
-
-cat.sound = function () {
-  return "meow";
-}
-
+// update
 cat.home = "Samsan-dong";
 
 
@@ -113,12 +117,16 @@ delete cat.home;
 /*
   Q1. Basic usage
 
-  print only available beers name.
+  answer these 2 questions refers to list below
+
+  1 print only available beers name.
   
   > result:
   Heineken
   Budwiser
   Kirin
+
+  2 Guinness is restocked. reflect change to list.
 */
 
 
@@ -129,25 +137,16 @@ var beers = [
   { name: "Kirin", origin: "Japan", available: true },
 ]
 
-
-for (let i=0; i<beers.length; i++) {
-  if (beers[i].available == false) {
+// 1
+for (var i = 0; i < beers.length; i++) {
+  if (beers[i].available == true) {
     console.log(beers[i].name);
   }
 }
 
-
-/*
-  Q2. Basic usage
-
-  Irish beer is restocked.
-*/
-
-
-var irishBeer = { 
-  name: "Guinness", 
-  origin: "Ireland",
-  available: false
+// 2
+for (var i = 0; i < beers.length; i++) {
+  if (beers[i].name == "Guinness") {
+    beers[i].available = true;
+  }
 }
-
-irishBeer.available = true;
