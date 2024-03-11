@@ -21,7 +21,7 @@
 
 
 ### JavaScript 2 
-> Learn ES6(Second major division with many new syntax)
+> Learn ES6(Second major division)
 
 1. let, const
 2. New methods

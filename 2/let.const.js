@@ -16,7 +16,7 @@
 
 // redeclation not allowed
 let foo = "bar";
-let foo = "baz"
+let foo = "baz";
 
 
 /* 
