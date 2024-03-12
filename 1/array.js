@@ -219,11 +219,20 @@ var asianCars = koreanCars.concat(japaneseCars);
   Loop array
   perform some operations to array.
 
-  1 an example
+  1 repeating tasks
+  2 filtering array
 */
 
 
-// an examples - print only adults (filtering)
+// repeating tasks - multiply each item by 10
+var arr = [10, 20, 30];
+
+for (var i = 0; i < arr.length; i++) {
+  console.log(arr[i] * 10);
+}
+
+
+// filtering - print only adults 
 var ages = [12, 19, 23, 30];
 
 for (var i = 0; i < arr.length; i++) {

@@ -3,83 +3,115 @@
   
   1 Array Destructing 
   2 Object Destructing
-  3 Parameter Destructing
 */
  
  
 /* 
   Array Destructing 
+
   assign item of array to variables with ease
 */
 
-var beers = ['Guinness', 'Heineken', 'Budwiser'];
+
+var beers = ["Guinness", "Heineken", "Budwiser"];
+
 
 // Traditional methods
-var irishBeer = beers[0]
-var dutchBeer = beers[1]
-var americanBeer = beers[3]
+var irishBeer = beers[0];
+var dutchBeer = beers[1];
+var americanBeer = beers[2];
+
+console.log(irishBeer);
+console.log(dutchBeer);
+console.log(americanBeer);
+
 
 // Destructing 
-var [ irishBeer, dutchBeer, americanBeer ] = beers;
+var [irishBeer, dutchBeer, americanBeer] = beers;
+
+console.log(irishBeer);
+console.log(dutchBeer);
+console.log(americanBeer);
+
+
+// with function
+f(beers);
+
+function f([irishBeer, dutchBeer, americanBeer]) {
+  console.log(irishBeer);
+  console.log(dutchBeer);
+  console.log(americanBeer);
+}
+
+
+/*
+  Q. Array destructing
+
+  assign each brand to variables with destructing syntax.
+*/
+
+
+var asianCars = ["Hyundai", "Toyota"];
+var [koreanCar, japaneseCar] = asianCars;
+
+console.log(koreanBeer);
+console.log(japaneseBeer);
 
 
 /* 
   Object Destructing 
-  access properties with ease
+
+  access properties of object with ease
 */
 
-var irishBeer = { name: 'Guinness', origin: 'Ireland', available: false }
+
+var irishBeer = { 
+  name: "Guinness", 
+  origin: "Ireland", 
+  available: false 
+}
+
 
 // Traditional
-console.log(irishBeer.name, irishBeer.origin, irishBeer.available);
+console.log(irishBeer.name);
+console.log(irishBeer.origin);
+console.log(irishBeer.available);
+
 
 // Destructing 
 var { name, origin, available } = irishBeer;
 
-console.log(name, origin, available)
+console.log(name);
+console.log(origin);
+console.log(available);
 
 
-/* 
-  Parameter Destructing 
-  access parameter with ease
-*/
+// with function
+f(irishBeer);
 
-var irishBeer = { name: 'Guinness', origin: 'Ireland', available: false };
-
-// Traditional
-function f(beer) {
-  console.log(beer.name, beer.origin, beer.available);
-}
-
-// Destructing
 function f({ name, origin, available }) {
-  console.log(name, origin, available);
+  console.log(name);
+  console.log(origin);
+  console.log(available);
 }
-
-f(irishBeer)
-
-
-/*
-  Q1. assign each beer to variables with destructing syntax.
-*/
-
-
-var asianBeers = ['Kloud', 'Asahi'];
-var [koreanBeer, japaneseBeer] = asianBeers;
-
-console.log(koreanBeer);
-console.log(japaneseBeer);
-// > Kloud 
-// > Asahi
 
 
 /* 
-  Q2. access properties with destructing
+  Q. Object destructing
+
+  access each property of object after destructing
 */
 
 
-var car = { name: "Avante", color: "White" };
-var { name, color } = car;
+var car = { 
+  name: "GV80", 
+  color: "Black",
+  brand: "GENESIS" 
+};
 
-console.log(name, color);
-// Avante White
+var { name, color, brand } = car;
+
+
+console.log(name);
+console.log(color);
+console.log(brand);

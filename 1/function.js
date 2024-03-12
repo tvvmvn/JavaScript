@@ -90,7 +90,7 @@ console.log("result:", r);
 
 
 // return also can be used to stop task.
-function getSquare(n) {
+function pow(n) {
   if (typeof n != "number") {
     console.log("err: wrong input");
     return;
@@ -99,7 +99,7 @@ function getSquare(n) {
   console.log(n ** 2);
 }
 
-getSquare(null);
+pow(null);
 
 
 /*

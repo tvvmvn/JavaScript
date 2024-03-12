@@ -60,7 +60,7 @@ console.log(sum);
 */
 
 
-for (var n = 1; n <= 10; i++) {
+for (var n = 1; n <= 10; n++) {
   if (n == 5) {
     break;
   }

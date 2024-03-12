@@ -1033,3 +1033,66 @@
 // console.log(num); 
 // 1
 
+
+// function pow(n) {
+//   return n ** 2;
+// }
+
+// console.log(pow(5));
+
+
+// var arr = [10, 20, 30];
+
+// arr.forEach(function (item, index, self) {
+//   console.log(item * 10);
+// })
+
+
+// for of - es 6
+
+
+// setInterval((ev) => {})
+
+
+// var beers = [
+//   { name: "Guinness", available: false },
+//   { name: "Heineken", available: true },
+//   { name: "Budwiser", available: true },
+//   { name: "Kirin", available: true },
+// ]
+
+
+// var availableBeers = beers.filter(function (beer) {
+//   if (beer.available) {
+//     return beer;
+//   }
+// })
+
+// console.log(availableBeers);
+
+
+// var arr = [10, 20, 30]
+
+// function f([a, b, c]) {
+//   console.log(a, b, c);
+// }
+
+// f(arr);
+
+
+// var beers = ["Guinness", "Heineken", "Budwiser"];
+
+// function f([irishBeer, dutchBeer, americanBeer]) {
+//   console.log(irishBeer);
+//   console.log(dutchBeer);
+//   console.log(americanBeer);
+// }
+
+// f(beers)
+
+
+// f(irishBeer)
+
+// function f({ name, origin, available }) {
+//   // ..
+// }

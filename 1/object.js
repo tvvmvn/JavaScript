@@ -68,7 +68,8 @@ var korea = {
   Basic usage
   
   1 access properties
-  2 add / update properties
+  2 add properties 
+  3 update properties
   4 delete properties
 */
 
@@ -89,20 +90,30 @@ console.log(cat["name"]);
 // > Kitty
 console.log(cat.sound());
 // > meow
-console.log(cat.color);
+console.log(cat.age);
 // > undefined
 
 
-// 2 add / update properties
+// 2 add properties
 var cat = { 
   name: "Kitty",
   home: null,
 }
 
-// add
 cat.age = 2;
-// update
+
+console.log(cat);
+
+
+// 3 update properties
+var cat = { 
+  name: "Kitty",
+  home: null,
+}
+
 cat.home = "Samsan-dong";
+
+console.log(cat);
 
 
 // 4 delete properties
@@ -113,28 +124,30 @@ var cat = {
 
 delete cat.home;
 
+console.log(cat);
+
 
 /*
   Q1. Basic usage
 
   answer these 2 questions refers to list below
 
-  1 print only available beers name.
+  1 print only names of available beers.
   
   > result:
   Heineken
   Budwiser
   Kirin
 
-  2 Guinness is restocked. reflect change to list.
+  2 Guinness is restocked, update list.
 */
 
 
 var beers = [
-  { name: "Guinness", origin: "Ireland", available: false },
-  { name: "Heineken", origin: "Netherlands", available: true },
-  { name: "Budwiser", origin: "USA", available: true },
-  { name: "Kirin", origin: "Japan", available: true },
+  { name: "Guinness", available: false },
+  { name: "Heineken", available: true },
+  { name: "Budwiser", available: true },
+  { name: "Kirin", available: true },
 ]
 
 // 1

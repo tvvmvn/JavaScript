@@ -14,7 +14,7 @@
 */
 
 
-// redeclation not allowed
+// redeclation is not allowed unlike var
 let foo = "bar";
 let foo = "baz";
 
@@ -22,10 +22,12 @@ let foo = "baz";
 /* 
   2 const 
   
-  constant
+  reserverd words for constant declaration 
 */
 
-const FOO = "bar";
+
+// only way to use it
+const foo = "bar";
 
 
 /* 
@@ -33,10 +35,11 @@ const FOO = "bar";
   let and const has block scope.
 */
 
+
 { // block
   var varInBlock = true;
   let letInBlock = true;
-  const CONST_IN_BLOCK = true;
+  const constInBlock = true;
 }
 
 console.log(varInBlock) 
