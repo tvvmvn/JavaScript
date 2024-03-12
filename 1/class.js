@@ -71,23 +71,20 @@ irishBeer.available = false;
 console.log(irishBeer);
 console.log(irishBeer instanceof Beer);
 
-
 var dutchBeer = new Beer();
 
-irishBeer.name = "Heineken"
-irishBeer.origin = "Netherlands"
-irishBeer.available = true;
-
+dutchBeer.name = "Heineken"
+dutchBeer.origin = "Netherlands"
+dutchBeer.available = true;
 
 console.log(dutchBeer);
 console.log(dutchBeer instanceof Beer);
 
-
 var americanBeer = new Beer();
 
-irishBeer.name = "Budwiser"
-irishBeer.origin = "USA"
-irishBeer.available = true;
+americanBeer.name = "Budwiser"
+americanBeer.origin = "USA"
+americanBeer.available = true;
 
 console.log(americanBeer);
 console.log(americanBeer instanceof Beer);

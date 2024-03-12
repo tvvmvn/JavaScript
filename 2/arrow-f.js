@@ -18,6 +18,7 @@ var f = function () {
   console.log("foo");
 }
 
+// with arrow function
 var f = () => {
   console.log("foo");
 }
@@ -30,17 +31,19 @@ var f = () => {
 */
 
 
+var add = (x, y) => {
+  return x + y;
+}
+
+
+// omitting brace
 var add = (x, y) => x + y;
-
-var r = add(1, 2);
-
-console.log(r);
 
 
 /* 
   3 omitting parameter brackets
 
-  you can omit bracket if function has only one argument.
+  you can omit bracket if function has only one parameter.
 */
 
 

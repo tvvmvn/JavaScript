@@ -18,8 +18,8 @@
 /*
   1 forEach 
 
-  - how to use
-  forEach(item, index, self)
+  It has callback as argument
+  callback has 3 parameters.
 
   1 item
   each item of array
@@ -59,10 +59,9 @@ console.log(newArr);
 /* 
   3 filter 
 
+  It has callback as argument
+  callback has 3 parameters.
   It returns filtered new array.
-
-  - how to use
-  filter(item, index, self)
 */
 
 
@@ -107,9 +106,7 @@ beers.forEach(function (beer) {
 
 // Q2
 var availableBeers = beers.filter(function (beer) {
-  if (beer.available) {
-    return beer;
-  }
+  return beer.available;
 })
 
 
