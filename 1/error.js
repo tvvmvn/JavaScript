@@ -9,7 +9,7 @@
 /* 
   Error (Bug)
 
-  error stops program.
+  defaults in code.
   error must be fixed.
 */
 
@@ -20,37 +20,13 @@ console.log(foo)
 // stack: details
 
 
-/* 
-  Exception 
-
-  1 Concept
-  2 Exception handling
-*/
-
-
 /*
-  1 Concept
+  Exception (Custom Error)
 
   An error that a programmer generates intentionally
   when need it
 
   e.g) Authentication & Authorization
-*/
-
-
-var input = "12";
-var password = "123";
-
-if (input != password) {
-  // throw an exception
-  throw "Password not match";
-}
-
-
-/*
-  2 Exception handling
-
-  try & catch syntax handles exception.
 */
 
 

@@ -1096,3 +1096,29 @@
 // function f({ name, origin, available }) {
 //   // ..
 // }
+
+
+
+// var promise = new Promise((res, rej) => {});
+
+// console.log(promise)
+
+
+const promise = new Promise((res, rej) => {
+  res("Meow");
+})
+
+async function f() {
+  try {
+
+    // wait for results
+    const data = await promise; 
+
+    console.log("data from server:", data);
+
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+f();

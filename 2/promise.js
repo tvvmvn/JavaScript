@@ -1,18 +1,16 @@
 /* 
-  Promise
+  Promise object
   
-  represents status whether success or failure and results 
-  of asynchronous operations.
-  used to improve readability for asynchronous operations. 
+  It have results and data of async operations.
+  It improves readability for async operations. 
 
-  1 Structure of promise
-  2 Realworld examples
-  3 async / await
+  1 Structure 
+  2 async / await
 */
 
 
 /*
-  Structure of Promise
+  Structure
 
   1 res, rej function
 
@@ -23,7 +21,8 @@
   invoked wheh operation fail
 
 
-  2 Promise status
+  2 Promise results (status)
+  
   1) fullfilled
   success of operation
   
@@ -31,10 +30,11 @@
   failure of operation
 
   3) pending
-  wait for end of operation
+  waiting for success or failure
 
 
   3 Promise method
+
   1) then
   process data when success
 
@@ -46,69 +46,43 @@
 */
 
 
-// instance 
+// promise
 const promise = new Promise((res, rej) => {
   // success
   res("Meow"); 
 }) 
 
+
 // usage
 promise
-  .then((value) => { // fullfilled
-    console.log(value)
+  .then((data) => { // data handling
+    console.log("data from server:", data)
   })
-  .catch((error) => { // rejected
-    console.error(error);
-  })
-
-
-/*
-  Realworld usage
-
-  when fetching data from server
-*/ 
-
-
-// request data to server
-function getData() {
-  const promise = new Promise((res, rej) => {
-    res("Meow"); 
-  })
-
-  return promise;
-}
-
-getData()
-  .then(data => { 
-    console.log("data from server:", data);
-  })
-  .catch(error => {
-    console.error(error)
+  .catch((error) => { // error handling
+    console.error("error:", error);
   })
 
 
 /*
   async / await
 
-  Wait for Promise object returning its results.
-  to improve readablility of Promise
-  error handling in try/catch
+  It waits for promise returning its results.
+  It improves readablility of promise operation
+  It is used with try / catch.
+
+  * 😂 debt metaphor (give me right now)
 */
 
 
-function fetchData() {
-  const promise = new Promise((res, rej) => {
-    res("Meow")
-  })
-
-  return promise;
-}
+const promise = new Promise((res, rej) => {
+  res("Meow");
+})
 
 async function f() {
   try {
 
     // wait for results
-    const data = await fetchData(); 
+    const data = await promise; 
 
     console.log("data from server:", data);
 
@@ -116,3 +90,5 @@ async function f() {
     console.error(err)
   }
 }
+
+f();

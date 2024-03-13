@@ -255,19 +255,18 @@ console.log(Car.getAge(2020));
 */
 
 
-
 /*
-  An object in a wide meaning in JavaScript
+  An object in a wide meaning in JS
 
-  1 An example
+  1 object in a wide meaning
   2 literal notation
 */
 
 
 /*
-  1 An example
+  1 object in a wide meaning
   
-  every value is object in a wide meaning.
+  every value is object
 */
 
 
@@ -282,7 +281,7 @@ console.log(foo.toUpperCase());
 /*
   2 literal notation
 
-  write value only at right side.
+  write value only when creates an instance
 */
 
 
@@ -291,7 +290,7 @@ var foo = new String("bar");
 var foo = "bar"; // literal
 
 
-// some class do not support literal.
+// some types do not support literal.
 var date = new Date();
 
 

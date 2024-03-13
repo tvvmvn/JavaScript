@@ -1,9 +1,6 @@
 /* 
-  * Asychronous operations 
-  It is used to prevent blocking in program
-
-  e.g) when fetching resources from a server.
-
+  Sync / Async operation 
+  
   1 Synchronous operations
   2 Asynchronous operations
 */
@@ -12,7 +9,8 @@
 /*
   Synchronous operation
   
-  operations run in order.
+  Operations run in order.
+  Most cases in programming.
 */
 
 
@@ -27,7 +25,8 @@ console.log("Operation 2");
 /*
   Asynchronous operation
 
-  Faster operation runs ahead
+  It is used to prevent blocking in program.
+  for example, when fetching resources from a server
 */
 
 
@@ -37,16 +36,16 @@ function getData(callback) {
   }, 1000);
 }
 
-
 getData(function (err, data) {
   if (err) {
     return console.error(err);
   }
 
-  console.log("Data from server:", data);
+  console.log("data from server:", data);
 });
 
-console.log("Next operations");
+// faster operation runs ahead 
+console.log("next operations");
 
 
 

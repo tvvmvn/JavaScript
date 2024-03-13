@@ -17,27 +17,28 @@
 
 var cat_json = '{ "name": "Kitty" }';
 
+console.log(cat_json);
 console.log(typeof cat_json);
 
 
 /* 
   JSON.stringify()
   
-  It converts Object to JSON
+  It converts object to JSON
 */
 
 
 var cat = { name: "Kitty" };
 var cat_json = JSON.stringify(cat);
 
-console.log(cat_json)
-console.log(typeof cat_json)
+console.log(cat_json);
+console.log(typeof cat_json);
 
 
 /*
   JSON.parse()
   
-  It converts JSON to Object
+  It converts JSON to object
 */
 
 

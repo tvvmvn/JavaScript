@@ -1,22 +1,22 @@
 /*
-  Spread Operator (...)
+  Spread Operator 
 
-  1 Spread operator in Array
-  2 Spread operator in Object
+  1 with Array
+  2 with Object
 */
 
 
 /* 
-  Spread operator in array
+  with Array
 
-  make items of array to copy with ease.
+  make items of array to copy easily.
   ...Array to copy
 */
 
 
 // add new item
-var beers = ['Guinness', 'Heineken'];
-var newBeer = "Budwiser"
+var beers = ["Guinness", "Heineken"];
+var newBeer = "Budwiser";
 
 var updatedBeers = [...beers, newBeer];
 
@@ -25,27 +25,10 @@ console.log(updatedBeers)
 
 
 /* 
-  Spread operator in Object
-
-  make properties of object to copy easily.
-  ...object to copy  
+  Q. with Array
+  create an asian cars list with spread operator
 */
 
-var irishBeer = { 
-  name: 'Guinness', 
-  origin: 'Ireland', 
-  available: false 
-};
-
-// update 
-var updatedIrishBeer = { ...irishBeer, available: true };
-
-console.log(updatedIrishBeer);
-
-
-/* 
-  create an asian cars list with spread syntax
-*/
 
 var koreanCars = ["Hyundai", "Kia"];
 var japaneseCars = ["Toyota", "Honda"];
@@ -54,20 +37,42 @@ var asianCars = [...koreanCars, ...japaneseCars];
 // > [Hyundai, Kia, Toyota, Honda]
 
 
-/*
-  Q. Update cat's home to Samsan-dong with spread operator
+/* 
+  with Object
+
+  make properties of object to copy easily.
+  ...object to copy  
 */
 
+
 var cat = {
-  name: 'Kitty',
+  name: "Kitty",
   age: 1,
   home: null,
-  sound: function () {
-    return 'Meow'
-  }
 }
 
-var updatedCat = { ...cat, home: 'Samsan-dong' };
+// adopted
+var updatedCat = { ...cat, home: "Samsan-dong" };
 
 console.log(updatedCat);
-// > ..., home: Samsan-dong
+
+
+/*
+  Q. with Object
+  Irish beer is restocked. 
+  create an updated one with spread operator.
+*/
+
+
+var irishBeer = { 
+  name: "Guinness", 
+  origin: "Ireland", 
+  available: false 
+};
+
+// restock 
+var updatedIrishBeer = { ...irishBeer, available: true };
+
+console.log(updatedIrishBeer);
+
+
