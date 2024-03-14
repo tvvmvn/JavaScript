@@ -128,6 +128,18 @@ f(cb);
 // > bar
 
 
+// anonymous function as callback
+function f(callback) {
+  var foo = "bar";
+
+  callback(foo);
+}
+
+f(function (data) {
+  console.log(data);
+})
+
+
 // 2 Realworld example 
 
 function getTime() {
