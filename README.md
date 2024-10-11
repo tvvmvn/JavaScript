@@ -1,10 +1,7 @@
-# JavaScript Tutorials 
+# JavaScript Tutorials
 
-
-### JavaScript 1
-> Learn the fundamentals
-
-1. Basic
+### Basic
+1. Intro
 2. Data type 
 3. String
 4. Operator
@@ -20,9 +17,7 @@
 14. JSON
 
 
-### JavaScript 2 
-> Learn ES6(Second major division)
-
+### ES6
 1. let, const
 2. New methods
 3. Arrow function 
