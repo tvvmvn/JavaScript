@@ -1,7 +1,6 @@
 var nums = [10, 20, 30];
 
-console.log(nums);
+nums.push(40);
 
-nums[0] = 11;
-
+// it will be .., 40
 console.log(nums);
